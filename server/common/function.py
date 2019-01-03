@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-from elasticsearch import Elasticsearch
+# from elasticsearch import Elasticsearch
 from django.http import HttpResponse, JsonResponse
 # from security_system.settings import ES_CONN_CONFIG
 
