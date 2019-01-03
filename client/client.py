@@ -56,17 +56,15 @@ def pull_data():
         for base_url in base_urls:
             error_db_info = base_url
             url = _create_url(base_url,params)
-            print('------url-----',url)
             logger.info("INFO begin pull data from: "+url[25:36])
             content = requests.get(url).json()#调API
-            print('----59----',type(content))
 
-            f1=open("results.txt",'w')
-            f1.write(content[0:9])
-            f1.close()
-            logger.info("INFO finish"+base_url[25:36])
+            # f1=open("results.txt",'w')
+            # f1.write(content[0:9])
+            # f1.close()
+            logger.info("INFO finish  "+base_url[25:36])
 
-        logger.info("INFO finish pull data")
+        logger.info("INFO  finish pull all database")
         _write_in_history(now)  # 写入历史记录
 
     except Exception as e:
