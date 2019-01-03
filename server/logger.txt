@@ -1,0 +1,21 @@
+2019-01-03 14:00:03,720 INFO     D:\software\work\anaconda\lib\site-packages\django\core\servers\basehttp.py[line:131] "GET /api/get/Cve?from=2018-01-01 HTTP/1.1" 301 0
+2019-01-03 14:00:04,290 ERROR    C:\Users\Tao xia\Desktop\数据同步\server\query\views.py[line:56] get cve error :(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'update_time <=2019-01-03 14:00:04.241685' at line 1")
+2019-01-03 14:00:04,291 INFO     D:\software\work\anaconda\lib\site-packages\django\core\servers\basehttp.py[line:131] "GET /api/get/Cve/?from=2018-01-01 HTTP/1.1" 200 95
+2019-01-03 14:01:27,400 INFO     D:\software\work\anaconda\lib\site-packages\django\core\servers\basehttp.py[line:131] "GET /api/get/Cve?from=2018-01-01 HTTP/1.1" 301 0
+2019-01-03 14:01:27,919 ERROR    C:\Users\Tao xia\Desktop\数据同步\server\query\views.py[line:57] get cve error :(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'update_time <=2019-01-03' at line 1")
+2019-01-03 14:01:27,919 INFO     D:\software\work\anaconda\lib\site-packages\django\core\servers\basehttp.py[line:131] "GET /api/get/Cve/?from=2018-01-01 HTTP/1.1" 200 95
+2019-01-03 14:03:52,190 INFO     D:\software\work\anaconda\lib\site-packages\django\core\servers\basehttp.py[line:131] "GET /api/get/Cve?from=2018-01-01 HTTP/1.1" 301 0
+2019-01-03 14:03:52,743 ERROR    C:\Users\Tao xia\Desktop\数据同步\server\query\views.py[line:57] get cve error :(1054, "Unknown column '01and' in 'where clause'")
+2019-01-03 14:03:52,744 INFO     D:\software\work\anaconda\lib\site-packages\django\core\servers\basehttp.py[line:131] "GET /api/get/Cve/?from=2018-01-01 HTTP/1.1" 200 95
+2019-01-03 14:04:34,508 INFO     D:\software\work\anaconda\lib\site-packages\django\core\servers\basehttp.py[line:131] "GET /api/get/Cve?from=2018-01-01 HTTP/1.1" 301 0
+2019-01-03 14:04:35,028 ERROR    C:\Users\Tao xia\Desktop\数据同步\server\query\views.py[line:58] get cve error :(1054, "Unknown column '01and' in 'where clause'")
+2019-01-03 14:04:35,028 INFO     D:\software\work\anaconda\lib\site-packages\django\core\servers\basehttp.py[line:131] "GET /api/get/Cve/?from=2018-01-01 HTTP/1.1" 200 95
+2019-01-03 14:04:50,008 INFO     D:\software\work\anaconda\lib\site-packages\django\core\servers\basehttp.py[line:131] "GET /api/get/Cve?from=2018-01-01 HTTP/1.1" 301 0
+2019-01-03 14:04:50,516 ERROR    C:\Users\Tao xia\Desktop\数据同步\server\query\views.py[line:58] get cve error :(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '<=2019-01-03' at line 1")
+2019-01-03 14:04:50,517 INFO     D:\software\work\anaconda\lib\site-packages\django\core\servers\basehttp.py[line:131] "GET /api/get/Cve/?from=2018-01-01 HTTP/1.1" 200 95
+2019-01-03 14:05:47,089 INFO     D:\software\work\anaconda\lib\site-packages\django\core\servers\basehttp.py[line:131] "GET /api/get/Cve?from=2018-01-01 HTTP/1.1" 301 0
+2019-01-03 14:05:47,609 ERROR    C:\Users\Tao xia\Desktop\数据同步\server\query\views.py[line:58] get cve error :(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '<= 2019-01-03' at line 1")
+2019-01-03 14:05:47,609 INFO     D:\software\work\anaconda\lib\site-packages\django\core\servers\basehttp.py[line:131] "GET /api/get/Cve/?from=2018-01-01 HTTP/1.1" 200 95
+2019-01-03 14:07:40,495 INFO     D:\software\work\anaconda\lib\site-packages\django\core\servers\basehttp.py[line:131] "GET /api/get/Cve?from=2018-01-01 HTTP/1.1" 301 0
+2019-01-03 14:07:41,108 INFO     C:\Users\Tao xia\Desktop\数据同步\server\query\views.py[line:32] count cve vulnerability of this time: 0
+2019-01-03 14:07:41,109 INFO     D:\software\work\anaconda\lib\site-packages\django\core\servers\basehttp.py[line:131] "GET /api/get/Cve/?from=2018-01-01 HTTP/1.1" 200 36
