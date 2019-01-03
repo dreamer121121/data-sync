@@ -22,7 +22,7 @@ def getCve(request):
             end_date = str(datetime.datetime.now())
             end_date = end_date[0:10]
 
-        sql = 'select * from cve where update_time >='+start_date+' and update_time <= '+end_date+';'
+        sql = 'select * from cve where update_time >='+'\'+'+start_date+'\''+' and update_time <= '+'\''+end_date+'\''
         cursor = Connect()
         cursor.execute(sql)
         rows = cursor.fetchall()

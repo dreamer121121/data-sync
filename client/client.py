@@ -28,7 +28,8 @@ def get_lasttime():
         lastime = FIRST_TIME #第一次拉取
     else:
         lastime = lastime[-1]
-        lastime = re.search('(\d+.*)' ,lastime).group(0)
+        lastime = re.search('(\d+.*) ' ,lastime).group(0)
+        print('----32----',lastime)
     return lastime
 
 def _create_params(lastime,now):
@@ -55,13 +56,15 @@ def pull_data():
         for base_url in base_urls:
             error_db_info = base_url
             url = _create_url(base_url,params)
-            logger.info("INFO begin pull data from "+url[25:36])
-            content = requests.get(url).json() #调API
+            print('------url-----',url)
+            logger.info("INFO begin pull data from: "+url[25:36])
+            content = requests.get(url).json()#调API
             print('----59----',type(content))
 
             f1=open("results.txt",'w')
             f1.write(content[0:9])
             f1.close()
+            logger.info("INFO finish"+base_url[25:36])
 
         logger.info("INFO finish pull data")
         _write_in_history(now)  # 写入历史记录

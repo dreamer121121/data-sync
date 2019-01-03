@@ -19,3 +19,12 @@
 2019-01-03 14:07:40,495 INFO     D:\software\work\anaconda\lib\site-packages\django\core\servers\basehttp.py[line:131] "GET /api/get/Cve?from=2018-01-01 HTTP/1.1" 301 0
 2019-01-03 14:07:41,108 INFO     C:\Users\Tao xia\Desktop\数据同步\server\query\views.py[line:32] count cve vulnerability of this time: 0
 2019-01-03 14:07:41,109 INFO     D:\software\work\anaconda\lib\site-packages\django\core\servers\basehttp.py[line:131] "GET /api/get/Cve/?from=2018-01-01 HTTP/1.1" 200 36
+2019-01-03 18:00:01,559 INFO     D:\software\work\anaconda\lib\site-packages\django\core\servers\basehttp.py[line:131] "GET /api/get/Cve?from=2018-01-01 HTTP/1.1" 301 0
+2019-01-03 18:00:02,460 INFO     C:\Users\Tao xia\Desktop\data-sync\server\query\views.py[line:29] count cve vulnerability of this time: 0
+2019-01-03 18:00:02,461 INFO     D:\software\work\anaconda\lib\site-packages\django\core\servers\basehttp.py[line:131] "GET /api/get/Cve/?from=2018-01-01 HTTP/1.1" 200 36
+2019-01-03 18:00:51,487 INFO     D:\software\work\anaconda\lib\site-packages\django\core\servers\basehttp.py[line:131] "GET /api/get/Cve?from=2018-01-01 HTTP/1.1" 301 0
+2019-01-03 18:00:52,283 INFO     C:\Users\Tao xia\Desktop\data-sync\server\query\views.py[line:29] count cve vulnerability of this time: 7409
+2019-01-03 18:00:52,419 INFO     D:\software\work\anaconda\lib\site-packages\django\core\servers\basehttp.py[line:131] "GET /api/get/Cve/?from=2018-01-01 HTTP/1.1" 200 7918096
+2019-01-03 18:06:15,630 INFO     D:\software\work\anaconda\lib\site-packages\django\core\servers\basehttp.py[line:131] "GET /api/get/Cve?from=2018-01-01 HTTP/1.1" 301 0
+2019-01-03 18:06:16,473 INFO     C:\Users\Tao xia\Desktop\data-sync\server\query\views.py[line:29] count cve vulnerability of this time: 7409
+2019-01-03 18:06:16,587 INFO     D:\software\work\anaconda\lib\site-packages\django\core\servers\basehttp.py[line:131] "GET /api/get/Cve/?from=2018-01-01 HTTP/1.1" 200 7918096
