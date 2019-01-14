@@ -1,0 +1,1681 @@
+INFO MainThread 2019-01-03 16:07:39:   begin pullhttp://192.168.1.40:8000/api/get/Cvefrom=2019-01-03&to=2019-01-03
+ERROR MainThread 2019-01-03 16:07:40:   get http://192.168.1.40:8000/api/get/Cve error: HTTPConnectionPool(host='192.168.1.40', port=8000): Max retries exceeded with url: /api/get/Cvefrom=2019-01-03&to=2019-01-03 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013F921AB2E8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+INFO MainThread 2019-01-03 16:07:40:   start sleep
+INFO MainThread 2019-01-03 16:14:51:   INFO begin pull dataapi/get/Cve
+ERROR MainThread 2019-01-03 16:14:52:   Error get http://192.168.1.40:8000/api/get/Cve error: HTTPConnectionPool(host='192.168.1.40', port=8000): Max retries exceeded with url: /api/get/Cvefrom=2019-01-03&to=2019-01-03 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C536C9F1D0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+INFO MainThread 2019-01-03 16:14:52:   INFO start sleep
+INFO MainThread 2019-01-03 16:15:15:   INFO begin pull data from api/get/Cve
+ERROR MainThread 2019-01-03 16:15:16:   Error get http://192.168.1.40:8000/api/get/Cve error: HTTPConnectionPool(host='192.168.1.40', port=8000): Max retries exceeded with url: /api/get/Cvefrom=2019-01-03&to=2019-01-03 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022F9BC2A2E8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+INFO MainThread 2019-01-03 16:15:16:   INFO start sleep
+INFO MainThread 2019-01-03 16:17:50:   INFO begin pull data from api/get/Cve
+ERROR MainThread 2019-01-03 16:17:51:   Error get api/get/Cve error: HTTPConnectionPool(host='192.168.1.40', port=8000): Max retries exceeded with url: /api/get/Cvefrom=2019-01-03&to=2019-01-03 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002044D99A358>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+INFO MainThread 2019-01-03 16:17:51:   INFO start sleep
+INFO MainThread 2019-01-03 16:19:44:   INFO begin pull data from api/get/Cve
+ERROR MainThread 2019-01-03 16:19:45:   Error get api/get/Cve error: HTTPConnectionPool(host='192.168.1.40', port=8000): Max retries exceeded with url: /api/get/Cvefrom=2019-01-03&to=2019-01-03 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000230B0F1F2B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+ERROR MainThread 2019-01-03 16:19:45:   Error pull data failed this time !
+INFO MainThread 2019-01-03 16:19:45:   INFO start sleep
+INFO MainThread 2019-01-03 16:20:43:   INFO begin pull data from api/get/Cve
+ERROR MainThread 2019-01-03 16:20:44:   Error get api/get/Cve:HTTPConnectionPool(host='192.168.1.40', port=8000): Max retries exceeded with url: /api/get/Cvefrom=2019-01-03&to=2019-01-03 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000288B355F2B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+ERROR MainThread 2019-01-03 16:20:44:   Error pull data failed this time !!!
+INFO MainThread 2019-01-03 16:20:44:   INFO start sleep
+INFO MainThread 2019-01-03 16:40:25:   INFO begin pull data from api/get/Cve
+ERROR MainThread 2019-01-03 16:40:25:   Error get api/get/Cve:'Response' object is not subscriptable
+ERROR MainThread 2019-01-03 16:40:25:   Error pull data failed this time !!!
+INFO MainThread 2019-01-03 16:40:25:   INFO finish pull data
+INFO MainThread 2019-01-03 16:40:25:   INFO start sleep
+INFO MainThread 2019-01-03 16:41:16:   INFO begin pull data from api/get/Cve
+ERROR MainThread 2019-01-03 16:41:16:   Error get api/get/Cve:Expecting value: line 2 column 1 (char 1)
+ERROR MainThread 2019-01-03 16:41:16:   Error pull data failed this time !!!
+INFO MainThread 2019-01-03 16:41:16:   INFO finish pull data
+INFO MainThread 2019-01-03 16:41:16:   INFO start sleep
+INFO MainThread 2019-01-03 16:49:34:   INFO begin pull data from api/get/Cve
+ERROR MainThread 2019-01-03 16:49:35:   Error get api/get/Cve:Expecting value: line 2 column 1 (char 1)
+ERROR MainThread 2019-01-03 16:49:35:   Error pull data failed this time !!!
+INFO MainThread 2019-01-03 16:49:35:   INFO start sleep
+INFO MainThread 2019-01-03 17:00:40:   INFO begin pull data from api/get/Cve
+ERROR MainThread 2019-01-03 17:00:41:   Error get api/get/Cve:Expecting value: line 2 column 1 (char 1)
+ERROR MainThread 2019-01-03 17:00:41:   Error pull data failed this time !!!
+INFO MainThread 2019-01-03 17:00:41:   INFO start sleep
+INFO MainThread 2019-01-03 17:03:29:   INFO begin pull data from api/get/Cve
+INFO MainThread 2019-01-03 17:03:30:   INFO finish pull data
+INFO MainThread 2019-01-03 17:03:30:   INFO start sleep
+INFO MainThread 2019-01-03 17:05:38:   INFO begin pull data from api/get/Cve
+ERROR MainThread 2019-01-03 17:05:38:   Error get api/get/Cve:'method' object is not subscriptable
+ERROR MainThread 2019-01-03 17:05:38:   Error pull data failed this time !!!
+INFO MainThread 2019-01-03 17:05:38:   INFO start sleep
+INFO MainThread 2019-01-03 17:07:00:   INFO begin pull data from api/get/Cve
+ERROR MainThread 2019-01-03 17:07:00:   Error get api/get/Cve:unhashable type: 'slice'
+ERROR MainThread 2019-01-03 17:07:00:   Error pull data failed this time !!!
+INFO MainThread 2019-01-03 17:07:00:   INFO start sleep
+INFO MainThread 2019-01-03 17:51:20:   INFO begin pull data from api/get/Cve
+ERROR MainThread 2019-01-03 17:51:20:   Error get api/get/Cve:unhashable type: 'slice'
+ERROR MainThread 2019-01-03 17:51:20:   Error pull data failed this time !!!
+INFO MainThread 2019-01-03 17:51:20:   INFO start sleep
+INFO MainThread 2019-01-03 17:52:11:   INFO begin pull data from api/get/Cve
+ERROR MainThread 2019-01-03 17:52:11:   Error get api/get/Cve:unhashable type: 'slice'
+ERROR MainThread 2019-01-03 17:52:11:   Error pull data failed this time !!!
+INFO MainThread 2019-01-03 17:52:11:   INFO start sleep
+INFO MainThread 2019-01-03 17:52:34:   INFO begin pull data from api/get/Cve
+ERROR MainThread 2019-01-03 17:52:34:   Error get api/get/Cve:unhashable type: 'slice'
+ERROR MainThread 2019-01-03 17:52:34:   Error pull data failed this time !!!
+INFO MainThread 2019-01-03 17:52:34:   INFO start sleep
+INFO MainThread 2019-01-03 17:56:18:   INFO begin pull data from: api/get/Cve
+ERROR MainThread 2019-01-03 17:56:18:   Error get api/get/Cve:unhashable type: 'slice'
+ERROR MainThread 2019-01-03 17:56:18:   Error pull data failed this time !!!
+INFO MainThread 2019-01-03 17:56:18:   INFO start sleep
+INFO MainThread 2019-01-03 17:56:48:   INFO begin pull data from: api/get/Cve
+ERROR MainThread 2019-01-03 17:56:48:   Error get api/get/Cve:unhashable type: 'slice'
+ERROR MainThread 2019-01-03 17:56:48:   Error pull data failed this time !!!
+INFO MainThread 2019-01-03 17:56:48:   INFO start sleep
+INFO MainThread 2019-01-03 18:08:25:   INFO begin pull data from: api/get/Cve
+ERROR MainThread 2019-01-03 18:08:27:   Error get api/get/Cve:unhashable type: 'slice'
+ERROR MainThread 2019-01-03 18:08:27:   Error pull data failed this time !!!
+INFO MainThread 2019-01-03 18:08:27:   INFO start sleep
+INFO MainThread 2019-01-03 18:09:27:   INFO begin pull data from: api/get/Cve
+ERROR MainThread 2019-01-03 18:09:28:   Error get api/get/Cve:unhashable type: 'slice'
+ERROR MainThread 2019-01-03 18:09:28:   Error pull data failed this time !!!
+INFO MainThread 2019-01-03 18:09:28:   INFO start sleep
+INFO MainThread 2019-01-03 18:09:37:   INFO begin pull data from: api/get/Cve
+INFO MainThread 2019-01-03 18:09:38:   INFO finishapi/get/Cve
+INFO MainThread 2019-01-03 18:09:38:   INFO finish pull data
+INFO MainThread 2019-01-03 18:09:38:   INFO start sleep
+INFO MainThread 2019-01-03 18:10:32:   INFO begin pull data from: api/get/Cve
+INFO MainThread 2019-01-03 18:10:33:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-03 18:10:33:   INFO  finish pull data
+INFO MainThread 2019-01-03 18:10:33:   INFO start sleep
+INFO MainThread 2019-01-03 18:10:54:   INFO begin pull data from: api/get/Cve
+INFO MainThread 2019-01-03 18:10:55:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-03 18:10:55:   INFO  finish pull database
+INFO MainThread 2019-01-03 18:10:55:   INFO start sleep
+INFO MainThread 2019-01-03 18:11:10:   INFO begin pull data from: api/get/Cve
+INFO MainThread 2019-01-03 18:11:11:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-03 18:11:11:   INFO  finish pull all database
+INFO MainThread 2019-01-03 18:11:11:   INFO start sleep
+INFO MainThread 2019-01-14 11:13:29:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:13:35:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:13:36:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:13:36:   INFO  finish pull all database
+INFO MainThread 2019-01-14 11:13:36:   INFO start sleep
+INFO MainThread 2019-01-14 11:14:36:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:14:37:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:14:37:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:14:37:   INFO  finish pull all database
+INFO MainThread 2019-01-14 11:14:37:   INFO start sleep
+INFO MainThread 2019-01-14 11:15:21:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:15:23:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:15:23:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:15:23:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:15:23:   INFO start sleep
+INFO MainThread 2019-01-14 11:17:35:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:17:37:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:17:37:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:17:37:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:17:37:   INFO start sleep
+INFO MainThread 2019-01-14 11:18:46:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:18:47:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:18:48:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:18:48:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:18:48:   INFO start sleep
+INFO MainThread 2019-01-14 11:19:43:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:19:44:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:19:44:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:19:44:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:19:44:   INFO start sleep
+INFO MainThread 2019-01-14 11:20:44:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:20:45:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:20:45:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:20:45:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:20:45:   INFO start sleep
+INFO MainThread 2019-01-14 11:21:23:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:21:24:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:21:24:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:21:24:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:21:24:   INFO start sleep
+INFO MainThread 2019-01-14 11:22:24:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:22:25:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:22:25:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:22:25:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:22:25:   INFO start sleep
+INFO MainThread 2019-01-14 11:23:25:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:23:26:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:23:26:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:23:26:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:23:26:   INFO start sleep
+INFO MainThread 2019-01-14 11:24:26:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:24:27:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:24:27:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:24:27:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:24:27:   INFO start sleep
+INFO MainThread 2019-01-14 11:24:48:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:24:49:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:24:49:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:24:49:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:24:49:   INFO start sleep
+INFO MainThread 2019-01-14 11:25:27:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:25:28:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:25:28:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:25:28:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:25:28:   INFO start sleep
+INFO MainThread 2019-01-14 11:26:28:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:26:29:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:26:30:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:26:30:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:26:30:   INFO start sleep
+INFO MainThread 2019-01-14 11:26:38:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:27:25:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:27:25:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:27:25:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:27:25:   INFO start sleep
+INFO MainThread 2019-01-14 11:27:30:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:27:30:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:27:31:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:27:31:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:27:31:   INFO start sleep
+INFO MainThread 2019-01-14 11:28:07:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:28:31:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:28:31:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:28:32:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:28:32:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:28:32:   INFO start sleep
+INFO MainThread 2019-01-14 11:28:53:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:28:53:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:28:53:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:28:53:   INFO start sleep
+INFO MainThread 2019-01-14 11:29:32:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:29:32:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:29:33:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:29:33:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:29:33:   INFO start sleep
+INFO MainThread 2019-01-14 11:29:53:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:30:33:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:30:34:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:30:34:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:30:34:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:30:34:   INFO start sleep
+INFO MainThread 2019-01-14 11:30:39:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:30:40:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:30:40:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:30:40:   INFO start sleep
+INFO MainThread 2019-01-14 11:31:34:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:31:34:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:31:35:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:31:35:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:31:35:   INFO start sleep
+INFO MainThread 2019-01-14 11:32:35:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:32:35:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:32:36:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:32:36:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:32:36:   INFO start sleep
+INFO MainThread 2019-01-14 11:33:36:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:33:36:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:33:36:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:33:36:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:33:36:   INFO start sleep
+INFO MainThread 2019-01-14 11:33:49:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:34:36:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:34:37:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:34:37:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:34:37:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:34:37:   INFO start sleep
+INFO MainThread 2019-01-14 11:35:28:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:35:37:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:35:38:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:35:39:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:35:39:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:35:39:   INFO start sleep
+INFO MainThread 2019-01-14 11:36:13:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:36:14:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:36:14:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:36:14:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:36:14:   INFO start sleep
+INFO MainThread 2019-01-14 11:36:39:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:36:41:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:36:41:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:36:41:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:36:41:   INFO start sleep
+INFO MainThread 2019-01-14 11:37:14:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:37:15:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:37:15:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:37:15:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:37:15:   INFO start sleep
+INFO MainThread 2019-01-14 11:37:41:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:37:42:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:37:42:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:37:42:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:37:42:   INFO start sleep
+INFO MainThread 2019-01-14 11:37:51:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:38:42:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:38:43:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:38:43:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:38:43:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:38:43:   INFO start sleep
+INFO MainThread 2019-01-14 11:39:07:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:39:08:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:39:08:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:39:08:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:39:08:   INFO start sleep
+INFO MainThread 2019-01-14 11:39:43:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:39:44:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:39:44:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:39:44:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:39:44:   INFO start sleep
+INFO MainThread 2019-01-14 11:39:53:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:39:55:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:39:55:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:39:55:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:39:55:   INFO start sleep
+INFO MainThread 2019-01-14 11:40:08:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:40:08:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:40:08:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:40:08:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:40:08:   INFO start sleep
+INFO MainThread 2019-01-14 11:40:44:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:40:45:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:40:45:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:40:45:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:40:45:   INFO start sleep
+INFO MainThread 2019-01-14 11:40:55:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:40:58:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:40:58:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:40:58:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:40:58:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:40:58:   INFO start sleep
+INFO MainThread 2019-01-14 11:41:08:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:41:09:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:41:09:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:41:09:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:41:09:   INFO start sleep
+INFO MainThread 2019-01-14 11:41:44:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:41:45:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:41:45:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:41:45:   INFO start sleep
+INFO MainThread 2019-01-14 11:41:45:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:41:46:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:41:46:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:41:46:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:41:46:   INFO start sleep
+INFO MainThread 2019-01-14 11:41:58:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:41:59:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:41:59:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:41:59:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:41:59:   INFO start sleep
+INFO MainThread 2019-01-14 11:42:09:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:42:17:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:42:17:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:42:17:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:42:17:   INFO start sleep
+INFO MainThread 2019-01-14 11:42:45:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:42:46:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:42:49:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:42:49:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:42:49:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:42:49:   INFO start sleep
+INFO MainThread 2019-01-14 11:42:59:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:43:04:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:43:04:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:43:04:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:43:04:   INFO start sleep
+INFO MainThread 2019-01-14 11:43:17:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:43:18:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:43:18:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:43:18:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:43:18:   INFO start sleep
+INFO MainThread 2019-01-14 11:43:32:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:43:49:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:43:54:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:43:54:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:43:54:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:43:54:   INFO start sleep
+INFO MainThread 2019-01-14 11:44:04:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:44:05:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:44:05:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:44:05:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:44:05:   INFO start sleep
+INFO MainThread 2019-01-14 11:44:11:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:44:18:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:44:18:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:44:18:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:44:18:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:44:18:   INFO start sleep
+INFO MainThread 2019-01-14 11:44:54:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:44:55:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:44:55:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:44:55:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:44:55:   INFO start sleep
+INFO MainThread 2019-01-14 11:45:05:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:45:06:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:45:06:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:45:06:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:45:06:   INFO start sleep
+INFO MainThread 2019-01-14 11:45:18:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:45:19:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:45:19:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:45:19:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:45:19:   INFO start sleep
+INFO MainThread 2019-01-14 11:45:55:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:45:56:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:45:56:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:45:56:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:45:56:   INFO start sleep
+INFO MainThread 2019-01-14 11:46:06:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:46:07:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:46:07:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:46:07:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:46:07:   INFO start sleep
+INFO MainThread 2019-01-14 11:46:19:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:46:20:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:46:20:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:46:20:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:46:20:   INFO start sleep
+INFO MainThread 2019-01-14 11:46:56:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:46:56:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:46:57:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:46:57:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:46:57:   INFO start sleep
+INFO MainThread 2019-01-14 11:47:07:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:47:07:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:47:07:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:47:07:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:47:07:   INFO start sleep
+INFO MainThread 2019-01-14 11:47:20:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:47:21:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:47:21:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:47:21:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:47:21:   INFO start sleep
+INFO MainThread 2019-01-14 11:47:57:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:47:57:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:47:57:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:47:57:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:47:57:   INFO start sleep
+INFO MainThread 2019-01-14 11:48:07:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:48:08:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:48:08:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:48:08:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:48:08:   INFO start sleep
+INFO MainThread 2019-01-14 11:48:21:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:48:21:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:48:21:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:48:21:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:48:21:   INFO start sleep
+INFO MainThread 2019-01-14 11:48:57:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:48:58:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:48:59:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:48:59:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:48:59:   INFO start sleep
+INFO MainThread 2019-01-14 11:49:08:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:49:09:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:49:09:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:49:09:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:49:09:   INFO start sleep
+INFO MainThread 2019-01-14 11:49:21:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:49:22:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:49:22:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:49:22:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:49:22:   INFO start sleep
+INFO MainThread 2019-01-14 11:49:59:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:49:59:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:49:59:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:49:59:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:49:59:   INFO start sleep
+INFO MainThread 2019-01-14 11:50:09:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:50:10:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:50:10:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:50:10:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:50:10:   INFO start sleep
+INFO MainThread 2019-01-14 11:50:22:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:50:23:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:50:23:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:50:23:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:50:23:   INFO start sleep
+INFO MainThread 2019-01-14 11:50:59:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:51:00:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:51:00:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:51:00:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:51:00:   INFO start sleep
+INFO MainThread 2019-01-14 11:51:10:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:51:10:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:51:10:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:51:10:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:51:10:   INFO start sleep
+INFO MainThread 2019-01-14 11:51:23:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:51:23:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:51:23:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:51:23:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:51:23:   INFO start sleep
+INFO MainThread 2019-01-14 11:52:00:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:52:01:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:52:01:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:52:01:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:52:01:   INFO start sleep
+INFO MainThread 2019-01-14 11:52:10:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:52:11:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:52:11:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:52:11:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:52:11:   INFO start sleep
+INFO MainThread 2019-01-14 11:52:23:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:52:24:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:52:24:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:52:24:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:52:24:   INFO start sleep
+INFO MainThread 2019-01-14 11:53:01:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:53:02:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:53:02:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:53:02:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:53:02:   INFO start sleep
+INFO MainThread 2019-01-14 11:53:11:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:53:12:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:53:12:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:53:12:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:53:12:   INFO start sleep
+INFO MainThread 2019-01-14 11:53:24:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:53:25:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:53:25:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:53:25:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:53:25:   INFO start sleep
+INFO MainThread 2019-01-14 11:54:02:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:54:03:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:54:03:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:54:03:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:54:03:   INFO start sleep
+INFO MainThread 2019-01-14 11:54:12:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:54:12:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:54:12:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:54:12:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:54:12:   INFO start sleep
+INFO MainThread 2019-01-14 11:54:25:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:54:25:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:54:25:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:54:25:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:54:25:   INFO start sleep
+INFO MainThread 2019-01-14 11:55:03:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:55:04:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:55:04:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:55:04:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:55:04:   INFO start sleep
+INFO MainThread 2019-01-14 11:55:12:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:55:13:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:55:13:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:55:13:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:55:13:   INFO start sleep
+INFO MainThread 2019-01-14 11:55:25:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:55:26:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:55:26:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:55:26:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:55:26:   INFO start sleep
+INFO MainThread 2019-01-14 11:56:04:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:56:05:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:56:05:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:56:05:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:56:05:   INFO start sleep
+INFO MainThread 2019-01-14 11:56:13:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:56:14:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:56:14:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:56:14:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:56:14:   INFO start sleep
+INFO MainThread 2019-01-14 11:56:26:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:56:28:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:56:28:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:56:28:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:56:28:   INFO start sleep
+INFO MainThread 2019-01-14 11:57:05:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:57:09:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:57:09:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:57:09:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:57:09:   INFO start sleep
+INFO MainThread 2019-01-14 11:57:14:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:57:17:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:57:17:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:57:17:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:57:17:   INFO start sleep
+INFO MainThread 2019-01-14 11:57:28:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:57:29:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:57:29:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:57:29:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:57:29:   INFO start sleep
+INFO MainThread 2019-01-14 11:58:09:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:58:10:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:58:10:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:58:10:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:58:10:   INFO start sleep
+INFO MainThread 2019-01-14 11:58:17:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:58:18:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:58:18:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:58:18:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:58:18:   INFO start sleep
+INFO MainThread 2019-01-14 11:58:29:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:58:30:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:58:30:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:58:30:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:58:30:   INFO start sleep
+INFO MainThread 2019-01-14 11:59:10:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:59:11:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:59:11:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:59:11:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:59:11:   INFO start sleep
+INFO MainThread 2019-01-14 11:59:18:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:59:19:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:59:19:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:59:19:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:59:19:   INFO start sleep
+INFO MainThread 2019-01-14 11:59:30:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 11:59:31:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 11:59:31:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 11:59:31:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 11:59:31:   INFO start sleep
+INFO MainThread 2019-01-14 12:00:11:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:00:12:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:00:12:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:00:12:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:00:12:   INFO start sleep
+INFO MainThread 2019-01-14 12:00:19:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:00:19:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:00:19:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:00:19:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:00:19:   INFO start sleep
+INFO MainThread 2019-01-14 12:00:31:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:00:31:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:00:31:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:00:31:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:00:31:   INFO start sleep
+INFO MainThread 2019-01-14 12:01:12:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:01:13:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:01:13:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:01:13:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:01:13:   INFO start sleep
+INFO MainThread 2019-01-14 12:01:19:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:01:20:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:01:20:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:01:20:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:01:20:   INFO start sleep
+INFO MainThread 2019-01-14 12:01:31:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:01:32:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:01:32:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:01:32:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:01:32:   INFO start sleep
+INFO MainThread 2019-01-14 12:02:13:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:02:14:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:02:14:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:02:14:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:02:14:   INFO start sleep
+INFO MainThread 2019-01-14 12:02:20:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:02:22:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:02:22:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:02:22:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:02:22:   INFO start sleep
+INFO MainThread 2019-01-14 12:02:32:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:02:33:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:02:33:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:02:33:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:02:33:   INFO start sleep
+INFO MainThread 2019-01-14 12:03:14:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:03:15:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:03:15:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:03:15:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:03:15:   INFO start sleep
+INFO MainThread 2019-01-14 12:03:22:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:03:24:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:03:24:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:03:24:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:03:24:   INFO start sleep
+INFO MainThread 2019-01-14 12:03:33:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:03:33:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:03:33:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:03:33:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:03:33:   INFO start sleep
+INFO MainThread 2019-01-14 12:04:15:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:04:16:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:04:16:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:04:16:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:04:16:   INFO start sleep
+INFO MainThread 2019-01-14 12:04:24:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:04:24:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:04:24:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:04:24:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:04:24:   INFO start sleep
+INFO MainThread 2019-01-14 12:04:33:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:04:34:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:04:34:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:04:34:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:04:34:   INFO start sleep
+INFO MainThread 2019-01-14 12:05:16:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:05:17:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:05:17:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:05:17:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:05:17:   INFO start sleep
+INFO MainThread 2019-01-14 12:05:24:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:05:27:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:05:27:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:05:27:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:05:27:   INFO start sleep
+INFO MainThread 2019-01-14 12:05:34:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:05:35:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:05:35:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:05:35:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:05:35:   INFO start sleep
+INFO MainThread 2019-01-14 12:06:17:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:06:17:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:06:18:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:06:18:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:06:18:   INFO start sleep
+INFO MainThread 2019-01-14 12:06:27:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:06:30:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:06:30:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:06:30:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:06:30:   INFO start sleep
+INFO MainThread 2019-01-14 12:06:35:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:06:35:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:06:35:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:06:35:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:06:35:   INFO start sleep
+INFO MainThread 2019-01-14 12:07:18:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:07:19:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:07:19:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:07:19:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:07:19:   INFO start sleep
+INFO MainThread 2019-01-14 12:07:30:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:07:31:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:07:31:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:07:31:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:07:31:   INFO start sleep
+INFO MainThread 2019-01-14 12:07:35:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:07:36:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:07:36:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:07:36:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:07:36:   INFO start sleep
+INFO MainThread 2019-01-14 12:08:19:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:08:19:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:08:20:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:08:20:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:08:20:   INFO start sleep
+INFO MainThread 2019-01-14 12:08:31:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:08:34:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:08:34:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:08:34:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:08:34:   INFO start sleep
+INFO MainThread 2019-01-14 12:08:36:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:08:37:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:08:37:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:08:37:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:08:37:   INFO start sleep
+INFO MainThread 2019-01-14 12:09:20:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:09:22:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:09:22:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:09:22:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:09:22:   INFO start sleep
+INFO MainThread 2019-01-14 12:09:34:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:09:35:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:09:35:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:09:35:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:09:35:   INFO start sleep
+INFO MainThread 2019-01-14 12:09:37:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:09:37:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:09:37:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:09:37:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:09:37:   INFO start sleep
+INFO MainThread 2019-01-14 12:10:22:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:10:23:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:10:24:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:10:24:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:10:24:   INFO start sleep
+INFO MainThread 2019-01-14 12:10:35:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:10:35:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:10:35:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:10:35:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:10:35:   INFO start sleep
+INFO MainThread 2019-01-14 12:10:37:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:10:39:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:10:39:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:10:39:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:10:39:   INFO start sleep
+INFO MainThread 2019-01-14 12:11:24:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:11:25:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:11:25:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:11:25:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:11:25:   INFO start sleep
+INFO MainThread 2019-01-14 12:11:35:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:11:36:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:11:36:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:11:36:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:11:36:   INFO start sleep
+INFO MainThread 2019-01-14 12:11:39:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:11:39:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:11:39:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:11:39:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:11:39:   INFO start sleep
+INFO MainThread 2019-01-14 12:12:25:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:12:26:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:12:26:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:12:26:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:12:26:   INFO start sleep
+INFO MainThread 2019-01-14 12:12:36:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:12:37:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:12:37:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:12:37:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:12:37:   INFO start sleep
+INFO MainThread 2019-01-14 12:12:39:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:12:40:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:12:40:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:12:40:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:12:40:   INFO start sleep
+INFO MainThread 2019-01-14 12:13:26:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:13:27:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:13:27:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:13:27:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:13:27:   INFO start sleep
+INFO MainThread 2019-01-14 12:13:37:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:13:37:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:13:37:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:13:37:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:13:37:   INFO start sleep
+INFO MainThread 2019-01-14 12:13:40:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:13:41:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:13:41:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:13:41:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:13:41:   INFO start sleep
+INFO MainThread 2019-01-14 12:14:27:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:14:28:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:14:28:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:14:28:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:14:28:   INFO start sleep
+INFO MainThread 2019-01-14 12:14:37:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:14:38:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:14:38:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:14:38:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:14:38:   INFO start sleep
+INFO MainThread 2019-01-14 12:14:41:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:14:43:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:14:43:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:14:43:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:14:43:   INFO start sleep
+INFO MainThread 2019-01-14 12:15:28:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:15:28:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:15:29:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:15:29:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:15:29:   INFO start sleep
+INFO MainThread 2019-01-14 12:15:38:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:15:39:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:15:39:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:15:39:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:15:39:   INFO start sleep
+INFO MainThread 2019-01-14 12:15:43:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:15:43:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:15:43:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:15:43:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:15:43:   INFO start sleep
+INFO MainThread 2019-01-14 12:16:29:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:16:29:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:16:30:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:16:30:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:16:30:   INFO start sleep
+INFO MainThread 2019-01-14 12:16:39:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:16:40:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:16:40:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:16:40:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:16:40:   INFO start sleep
+INFO MainThread 2019-01-14 12:16:43:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:16:44:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:16:44:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:16:44:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:16:44:   INFO start sleep
+INFO MainThread 2019-01-14 12:17:30:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:17:30:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:17:30:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:17:30:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:17:30:   INFO start sleep
+INFO MainThread 2019-01-14 12:17:40:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:17:40:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:17:40:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:17:40:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:17:40:   INFO start sleep
+INFO MainThread 2019-01-14 12:17:44:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:17:48:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:17:48:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:17:48:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:17:48:   INFO start sleep
+INFO MainThread 2019-01-14 12:18:30:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:18:32:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:18:32:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:18:32:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:18:32:   INFO start sleep
+INFO MainThread 2019-01-14 12:18:40:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:18:46:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:18:46:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:18:46:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:18:46:   INFO start sleep
+INFO MainThread 2019-01-14 12:18:48:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:18:49:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:18:49:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:18:49:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:18:49:   INFO start sleep
+INFO MainThread 2019-01-14 12:19:32:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:19:33:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:19:33:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:19:33:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:19:33:   INFO start sleep
+INFO MainThread 2019-01-14 12:19:46:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:19:47:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:19:47:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:19:47:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:19:47:   INFO start sleep
+INFO MainThread 2019-01-14 12:19:49:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:19:50:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:19:50:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:19:50:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:19:50:   INFO start sleep
+INFO MainThread 2019-01-14 12:20:33:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:20:34:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:20:34:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:20:34:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:20:34:   INFO start sleep
+INFO MainThread 2019-01-14 12:20:47:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:20:49:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:20:49:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:20:49:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:20:49:   INFO start sleep
+INFO MainThread 2019-01-14 12:20:50:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:20:50:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:20:50:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:20:50:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:20:50:   INFO start sleep
+INFO MainThread 2019-01-14 12:21:34:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:21:34:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:21:35:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:21:35:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:21:35:   INFO start sleep
+INFO MainThread 2019-01-14 12:21:49:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:21:50:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:21:50:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:21:50:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:21:50:   INFO start sleep
+INFO MainThread 2019-01-14 12:21:50:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:21:52:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:21:52:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:21:52:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:21:52:   INFO start sleep
+INFO MainThread 2019-01-14 12:22:35:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:22:36:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:22:37:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:22:37:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:22:37:   INFO start sleep
+INFO MainThread 2019-01-14 12:22:50:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:22:51:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:22:51:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:22:51:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:22:51:   INFO start sleep
+INFO MainThread 2019-01-14 12:22:52:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:22:53:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:22:53:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:22:53:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:22:53:   INFO start sleep
+INFO MainThread 2019-01-14 12:23:37:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:23:38:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:23:38:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:23:38:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:23:38:   INFO start sleep
+INFO MainThread 2019-01-14 12:23:51:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:23:51:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:23:51:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:23:51:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:23:51:   INFO start sleep
+INFO MainThread 2019-01-14 12:23:53:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:23:54:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:23:54:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:23:54:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:23:54:   INFO start sleep
+INFO MainThread 2019-01-14 12:24:38:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:24:39:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:24:39:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:24:39:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:24:39:   INFO start sleep
+INFO MainThread 2019-01-14 12:24:51:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:24:52:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:24:52:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:24:52:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:24:52:   INFO start sleep
+INFO MainThread 2019-01-14 12:24:54:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:24:55:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:24:55:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:24:55:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:24:55:   INFO start sleep
+INFO MainThread 2019-01-14 12:25:39:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:25:40:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:25:40:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:25:40:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:25:40:   INFO start sleep
+INFO MainThread 2019-01-14 12:25:52:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:25:54:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:25:54:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:25:54:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:25:54:   INFO start sleep
+INFO MainThread 2019-01-14 12:25:55:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:25:56:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:25:56:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:25:56:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:25:57:   INFO start sleep
+INFO MainThread 2019-01-14 12:26:40:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:26:41:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:26:41:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:26:41:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:26:41:   INFO start sleep
+INFO MainThread 2019-01-14 12:26:54:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:26:57:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:26:57:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:26:57:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:26:57:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:26:57:   INFO start sleep
+INFO MainThread 2019-01-14 12:26:58:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:26:58:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:26:58:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:26:58:   INFO start sleep
+INFO MainThread 2019-01-14 12:27:41:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:27:42:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:27:42:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:27:42:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:27:42:   INFO start sleep
+INFO MainThread 2019-01-14 12:27:57:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:27:58:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:27:58:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:27:58:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:27:58:   INFO start sleep
+INFO MainThread 2019-01-14 12:27:58:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:27:59:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:27:59:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:27:59:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:27:59:   INFO start sleep
+INFO MainThread 2019-01-14 12:28:42:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:28:43:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:28:43:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:28:43:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:28:43:   INFO start sleep
+INFO MainThread 2019-01-14 12:28:58:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:28:59:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:28:59:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:28:59:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:28:59:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:28:59:   INFO start sleep
+INFO MainThread 2019-01-14 12:29:00:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:29:00:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:29:00:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:29:00:   INFO start sleep
+INFO MainThread 2019-01-14 12:29:43:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:29:44:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:29:44:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:29:44:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:29:44:   INFO start sleep
+INFO MainThread 2019-01-14 12:29:59:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:30:00:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:30:00:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:30:00:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:30:00:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:30:00:   INFO start sleep
+INFO MainThread 2019-01-14 12:30:00:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:30:00:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:30:00:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:30:00:   INFO start sleep
+INFO MainThread 2019-01-14 12:30:44:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:30:45:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:30:45:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:30:45:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:30:45:   INFO start sleep
+INFO MainThread 2019-01-14 12:31:00:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:31:00:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:31:01:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:31:01:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:31:01:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:31:01:   INFO start sleep
+INFO MainThread 2019-01-14 12:31:01:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:31:01:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:31:01:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:31:01:   INFO start sleep
+INFO MainThread 2019-01-14 12:31:45:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:31:46:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:31:46:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:31:46:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:31:46:   INFO start sleep
+INFO MainThread 2019-01-14 12:32:01:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:32:01:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:32:01:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:32:01:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:32:01:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:32:01:   INFO start sleep
+INFO MainThread 2019-01-14 12:32:03:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:32:03:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:32:03:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:32:03:   INFO start sleep
+INFO MainThread 2019-01-14 12:32:46:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:32:47:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:32:47:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:32:47:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:32:47:   INFO start sleep
+INFO MainThread 2019-01-14 12:33:01:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:33:03:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:33:03:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:33:03:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:33:03:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:33:03:   INFO start sleep
+INFO MainThread 2019-01-14 12:33:04:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:33:04:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:33:04:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:33:04:   INFO start sleep
+INFO MainThread 2019-01-14 12:33:47:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:33:48:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:33:48:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:33:48:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:33:48:   INFO start sleep
+INFO MainThread 2019-01-14 12:34:03:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:34:04:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:34:04:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:34:04:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:34:04:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:34:04:   INFO start sleep
+INFO MainThread 2019-01-14 12:34:06:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:34:06:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:34:06:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:34:06:   INFO start sleep
+INFO MainThread 2019-01-14 12:34:48:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:34:50:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:34:50:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:34:50:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:34:50:   INFO start sleep
+INFO MainThread 2019-01-14 12:35:04:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:35:05:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:35:05:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:35:05:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:35:05:   INFO start sleep
+INFO MainThread 2019-01-14 12:35:06:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:35:06:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:35:06:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:35:06:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:35:06:   INFO start sleep
+INFO MainThread 2019-01-14 12:35:50:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:35:51:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:35:51:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:35:51:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:35:51:   INFO start sleep
+INFO MainThread 2019-01-14 12:36:05:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:36:05:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:36:05:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:36:05:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:36:05:   INFO start sleep
+INFO MainThread 2019-01-14 12:36:06:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:36:07:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:36:07:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:36:07:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:36:07:   INFO start sleep
+INFO MainThread 2019-01-14 12:36:51:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:36:52:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:36:52:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:36:52:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:36:52:   INFO start sleep
+INFO MainThread 2019-01-14 12:37:05:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:37:06:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:37:06:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:37:06:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:37:06:   INFO start sleep
+INFO MainThread 2019-01-14 12:37:07:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:37:08:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:37:08:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:37:08:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:37:08:   INFO start sleep
+INFO MainThread 2019-01-14 12:37:52:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:37:54:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:37:54:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:37:54:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:37:54:   INFO start sleep
+INFO MainThread 2019-01-14 12:38:06:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:38:07:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:38:07:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:38:07:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:38:07:   INFO start sleep
+INFO MainThread 2019-01-14 12:38:08:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:38:08:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:38:08:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:38:08:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:38:08:   INFO start sleep
+INFO MainThread 2019-01-14 12:38:54:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:38:55:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:38:55:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:38:55:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:38:55:   INFO start sleep
+INFO MainThread 2019-01-14 12:39:07:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:39:08:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:39:08:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:39:08:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:39:08:   INFO start sleep
+INFO MainThread 2019-01-14 12:39:08:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:39:10:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:39:10:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:39:10:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:39:10:   INFO start sleep
+INFO MainThread 2019-01-14 12:39:55:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:39:56:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:39:57:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:39:57:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:39:57:   INFO start sleep
+INFO MainThread 2019-01-14 12:40:08:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:40:10:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:40:11:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:40:11:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:40:11:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:40:11:   INFO start sleep
+INFO MainThread 2019-01-14 12:40:11:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:40:11:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:40:11:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:40:11:   INFO start sleep
+INFO MainThread 2019-01-14 12:40:57:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:40:58:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:40:58:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:40:58:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:40:58:   INFO start sleep
+INFO MainThread 2019-01-14 12:41:11:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:41:11:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:41:12:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:41:12:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:41:12:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:41:12:   INFO start sleep
+INFO MainThread 2019-01-14 12:41:16:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:41:16:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:41:16:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:41:16:   INFO start sleep
+INFO MainThread 2019-01-14 12:41:58:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:41:59:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:41:59:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:41:59:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:41:59:   INFO start sleep
+INFO MainThread 2019-01-14 12:42:12:   INFO begin get data from: api/get/Cve
+ERROR MainThread 2019-01-14 12:42:13:   Error get api/get/Cve:HTTPConnectionPool(host='192.168.1.40', port=8000): Max retries exceeded with url: /api/get/Cve?from=2019-01-14+&to=2019-01-14 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x000001E20D4A57B8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+ERROR MainThread 2019-01-14 12:42:13:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 12:42:13:   INFO start sleep
+INFO MainThread 2019-01-14 12:42:16:   INFO begin get data from: api/get/Cve
+ERROR MainThread 2019-01-14 12:42:17:   Error get api/get/Cve:HTTPConnectionPool(host='192.168.1.40', port=8000): Max retries exceeded with url: /api/get/Cve?from=2019-01-14+&to=2019-01-14 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x000001889B8E4F28>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+ERROR MainThread 2019-01-14 12:42:17:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 12:42:17:   INFO start sleep
+INFO MainThread 2019-01-14 12:42:59:   INFO begin get data from: api/get/Cve
+ERROR MainThread 2019-01-14 12:43:00:   Error get api/get/Cve:HTTPConnectionPool(host='192.168.1.40', port=8000): Max retries exceeded with url: /api/get/Cve?from=2019-01-14+&to=2019-01-14 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000014E693DE080>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+ERROR MainThread 2019-01-14 12:43:00:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 12:43:00:   INFO start sleep
+INFO MainThread 2019-01-14 12:43:13:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:43:13:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:43:13:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:43:13:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:43:13:   INFO start sleep
+INFO MainThread 2019-01-14 12:43:17:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:43:17:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:43:17:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:43:17:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:43:17:   INFO start sleep
+INFO MainThread 2019-01-14 12:44:00:   INFO begin get data from: api/get/Cve
+ERROR MainThread 2019-01-14 12:44:01:   Error get api/get/Cve:HTTPConnectionPool(host='192.168.1.40', port=8000): Max retries exceeded with url: /api/get/Cve?from=2019-01-14+&to=2019-01-14 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000014E693DE588>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+ERROR MainThread 2019-01-14 12:44:01:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 12:44:01:   INFO start sleep
+INFO MainThread 2019-01-14 12:44:13:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:44:14:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:44:14:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:44:14:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:44:14:   INFO start sleep
+INFO MainThread 2019-01-14 12:44:17:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:44:18:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:44:18:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:44:18:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:44:18:   INFO start sleep
+INFO MainThread 2019-01-14 12:45:01:   INFO begin get data from: api/get/Cve
+ERROR MainThread 2019-01-14 12:45:02:   Error get api/get/Cve:HTTPConnectionPool(host='192.168.1.40', port=8000): Max retries exceeded with url: /api/get/Cve?from=2019-01-14+&to=2019-01-14 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x0000014E68F967B8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+ERROR MainThread 2019-01-14 12:45:02:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 12:45:02:   INFO start sleep
+INFO MainThread 2019-01-14 12:45:14:   INFO begin get data from: api/get/Cve
+ERROR MainThread 2019-01-14 12:45:15:   Error get api/get/Cve:HTTPConnectionPool(host='192.168.1.40', port=8000): Max retries exceeded with url: /api/get/Cve?from=2019-01-14+&to=2019-01-14 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x000001E20D8EF710>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+ERROR MainThread 2019-01-14 12:45:15:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 12:45:15:   INFO start sleep
+INFO MainThread 2019-01-14 12:45:18:   INFO begin get data from: api/get/Cve
+ERROR MainThread 2019-01-14 12:45:19:   Error get api/get/Cve:HTTPConnectionPool(host='192.168.1.40', port=8000): Max retries exceeded with url: /api/get/Cve?from=2019-01-14+&to=2019-01-14 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x000001889BD2E898>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+ERROR MainThread 2019-01-14 12:45:19:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 12:45:19:   INFO start sleep
+INFO MainThread 2019-01-14 12:46:02:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:46:03:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:46:03:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:46:03:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:46:03:   INFO start sleep
+INFO MainThread 2019-01-14 12:46:15:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 12:46:16:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 12:46:16:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 12:46:16:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 12:46:16:   INFO start sleep
+INFO MainThread 2019-01-14 13:39:00:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 13:39:00:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 13:39:00:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 13:39:00:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 13:39:00:   INFO start sleep
+INFO MainThread 2019-01-14 13:39:56:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 13:39:57:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 13:39:57:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 13:39:57:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 13:39:57:   INFO start sleep
+INFO MainThread 2019-01-14 13:40:00:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 13:40:00:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 13:40:00:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 13:40:00:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 13:40:00:   INFO start sleep
+INFO MainThread 2019-01-14 13:41:07:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 13:41:08:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 13:41:08:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 13:41:08:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 13:41:08:   INFO start sleep
+INFO MainThread 2019-01-14 13:43:00:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 13:43:01:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 13:43:01:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 13:43:01:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 13:43:01:   INFO start sleep
+INFO MainThread 2019-01-14 13:44:01:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 13:44:01:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 13:44:01:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 13:44:01:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 13:44:01:   INFO start sleep
+INFO MainThread 2019-01-14 13:44:20:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 13:44:20:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 13:44:21:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 13:44:21:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 13:44:21:   INFO start sleep
+INFO MainThread 2019-01-14 13:49:53:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 13:49:53:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 13:49:53:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 13:49:53:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 13:49:53:   INFO start sleep
+INFO MainThread 2019-01-14 13:50:14:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 13:50:15:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 13:50:15:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 13:50:15:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 13:50:15:   INFO start sleep
+INFO MainThread 2019-01-14 13:52:27:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 13:52:27:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 13:52:27:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 13:52:27:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 13:52:27:   INFO start sleep
+INFO MainThread 2019-01-14 13:52:43:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 13:54:30:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 13:54:31:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 13:54:31:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 13:54:31:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 13:54:31:   INFO start sleep
+INFO MainThread 2019-01-14 13:58:33:   INFO begin get data from: api/get/Cve
+ERROR MainThread 2019-01-14 13:58:34:   Error get api/get/Cve:HTTPConnectionPool(host='192.168.1.40', port=8000): Max retries exceeded with url: /api/get/Cve?from=2019-01-14+&to=2019-01-14 (Caused by NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection object at 0x000002C7A4393E80>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+ERROR MainThread 2019-01-14 13:58:34:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 13:58:34:   INFO start sleep
+INFO MainThread 2019-01-14 13:58:59:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 13:58:59:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 13:58:59:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 13:58:59:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 13:58:59:   INFO start sleep
+INFO MainThread 2019-01-14 13:59:29:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 13:59:29:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 13:59:30:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 13:59:30:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 13:59:30:   INFO start sleep
+INFO MainThread 2019-01-14 14:02:28:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 14:02:28:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 14:02:28:   Error get api/get/Cve:write() argument must be str, not dict
+ERROR MainThread 2019-01-14 14:02:28:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 14:02:28:   INFO start sleep
+INFO MainThread 2019-01-14 14:02:49:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 14:02:49:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 14:02:49:   Error get api/get/Cve:write() argument must be str, not dict
+ERROR MainThread 2019-01-14 14:02:49:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 14:02:49:   INFO start sleep
+INFO MainThread 2019-01-14 14:03:19:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 14:03:19:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 14:03:19:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 14:03:19:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 14:03:19:   INFO start sleep
+INFO MainThread 2019-01-14 14:03:44:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 14:03:45:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 14:03:45:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 14:03:45:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 14:03:45:   INFO start sleep
+INFO MainThread 2019-01-14 14:04:19:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 14:04:19:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 14:04:19:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 14:04:19:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 14:04:19:   INFO start sleep
+INFO MainThread 2019-01-14 14:04:41:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 14:04:42:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 14:04:42:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 14:04:42:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 14:04:42:   INFO start sleep
+INFO MainThread 2019-01-14 14:05:19:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 14:05:19:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 14:05:19:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 14:05:19:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 14:05:20:   INFO start sleep
+INFO MainThread 2019-01-14 14:10:21:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 14:10:21:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 14:10:21:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 14:10:21:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 14:10:21:   INFO start sleep
+INFO MainThread 2019-01-14 14:10:40:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 14:10:40:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 14:10:40:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 14:10:40:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 14:10:40:   INFO start sleep
+INFO MainThread 2019-01-14 14:11:35:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 14:11:35:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 14:11:35:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 14:11:35:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 14:11:35:   INFO start sleep
+INFO MainThread 2019-01-14 14:11:54:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 14:12:35:   INFO begin get data from: api/get/Cve
+ERROR MainThread 2019-01-14 14:12:36:   Error get api/get/Cve:('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+ERROR MainThread 2019-01-14 14:12:36:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 14:12:36:   INFO start sleep
+INFO MainThread 2019-01-14 14:13:26:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 14:16:47:   INFO begin get data from: api/get/Cve
+ERROR MainThread 2019-01-14 14:16:48:   Error get api/get/Cve:'bytes' object is not callable
+ERROR MainThread 2019-01-14 14:16:48:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 14:16:48:   INFO start sleep
+INFO MainThread 2019-01-14 14:17:09:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 14:17:29:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 14:17:46:   INFO begin get data from: api/get/Cve
+ERROR MainThread 2019-01-14 14:17:46:   Error get api/get/Cve:'bytes' object is not callable
+ERROR MainThread 2019-01-14 14:17:46:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 14:17:46:   INFO start sleep
+INFO MainThread 2019-01-14 14:18:06:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 14:18:07:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 14:18:07:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 14:18:07:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 14:18:07:   INFO start sleep
+INFO MainThread 2019-01-14 14:18:44:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 14:18:44:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 14:18:44:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 14:18:44:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 14:18:44:   INFO start sleep
+INFO MainThread 2019-01-14 14:20:09:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 14:20:09:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 14:20:09:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 14:20:09:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 14:20:09:   INFO start sleep
+INFO MainThread 2019-01-14 14:20:47:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 14:20:48:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 14:20:48:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 14:20:48:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 14:20:48:   INFO start sleep
+INFO MainThread 2019-01-14 14:21:42:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 14:21:42:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 14:21:42:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 14:21:42:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 14:21:42:   INFO start sleep
+INFO MainThread 2019-01-14 14:22:01:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 14:22:01:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 14:22:01:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 14:22:01:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 14:22:01:   INFO start sleep
+INFO MainThread 2019-01-14 14:25:37:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 14:25:37:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 14:25:37:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 14:25:37:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 14:25:37:   INFO start sleep
+INFO MainThread 2019-01-14 14:28:08:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 14:28:08:   INFO get data 0
+INFO MainThread 2019-01-14 14:28:13:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 14:28:13:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 14:28:13:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 14:28:13:   INFO start sleep
+INFO MainThread 2019-01-14 14:28:31:   INFO begin get data from: api/get/Cve
+INFO MainThread 2019-01-14 14:28:32:   INFO get data 7409
+INFO MainThread 2019-01-14 14:29:37:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 14:29:38:   INFO get data total7409
+INFO MainThread 2019-01-14 14:31:27:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 14:31:27:   INFO get data from Cvetotal7409
+INFO MainThread 2019-01-14 14:31:32:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 14:31:32:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 14:31:32:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 14:31:32:   INFO start sleep
+INFO MainThread 2019-01-14 14:31:50:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 14:31:50:   INFO get data from Cve total: 0
+INFO MainThread 2019-01-14 14:31:55:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 14:31:55:   INFO finish  api/get/Cve
+INFO MainThread 2019-01-14 14:31:55:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 14:31:55:   INFO start sleep
+INFO MainThread 2019-01-14 14:32:45:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 14:32:45:   INFO get data from Cve total: 0
+INFO MainThread 2019-01-14 14:32:50:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 14:32:50:   INFO finish data-sync for Cve
+INFO MainThread 2019-01-14 14:32:50:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 14:32:50:   INFO start sleep
+INFO MainThread 2019-01-14 14:33:50:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 14:33:50:   INFO get data from Cve total: 0
+INFO MainThread 2019-01-14 14:33:55:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 14:33:55:   INFO finish data-sync for Cve
+INFO MainThread 2019-01-14 14:33:55:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 14:33:55:   INFO start sleep
+INFO MainThread 2019-01-14 15:51:20:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 15:51:20:   INFO get data from Cve total: 0
+INFO MainThread 2019-01-14 15:51:25:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 15:51:25:   INFO finish data-sync for Cve
+INFO MainThread 2019-01-14 15:51:25:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 15:51:25:   INFO start sleep
+INFO MainThread 2019-01-14 15:51:56:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 15:51:57:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 15:52:02:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 15:52:02:   INFO finish data-sync for Cve
+INFO MainThread 2019-01-14 15:52:02:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 15:52:02:   INFO start sleep
+INFO MainThread 2019-01-14 16:02:28:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:02:28:   INFO get data from Cve total: 0
+INFO MainThread 2019-01-14 16:02:33:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 16:02:33:   INFO finish data-sync for Cve
+INFO MainThread 2019-01-14 16:02:33:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 16:02:33:   INFO start sleep
+INFO MainThread 2019-01-14 16:03:04:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:03:04:   INFO get data from Cve total: 0
+INFO MainThread 2019-01-14 16:03:09:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:03:09:   Error get api/get/Cve:0
+ERROR MainThread 2019-01-14 16:03:09:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:03:09:   INFO start sleep
+INFO MainThread 2019-01-14 16:04:09:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:04:09:   INFO get data from Cve total: 0
+INFO MainThread 2019-01-14 16:04:14:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:04:14:   Error get api/get/Cve:0
+ERROR MainThread 2019-01-14 16:04:14:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:04:14:   INFO start sleep
+INFO MainThread 2019-01-14 16:05:19:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:05:19:   INFO get data from Cve total: 0
+INFO MainThread 2019-01-14 16:05:24:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:05:24:   Error get api/get/Cve:0
+ERROR MainThread 2019-01-14 16:05:24:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:05:24:   INFO start sleep
+INFO MainThread 2019-01-14 16:07:14:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:07:14:   INFO get data from Cve total: 0
+INFO MainThread 2019-01-14 16:07:19:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:07:19:   Error get api/get/Cve:0
+ERROR MainThread 2019-01-14 16:07:19:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:07:19:   INFO start sleep
+INFO MainThread 2019-01-14 16:07:46:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:07:46:   INFO get data from Cve total: 0
+INFO MainThread 2019-01-14 16:07:51:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:07:51:   Error get api/get/Cve:0
+ERROR MainThread 2019-01-14 16:07:51:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:07:51:   INFO start sleep
+INFO MainThread 2019-01-14 16:09:06:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:09:06:   INFO get data from Cve total: 0
+INFO MainThread 2019-01-14 16:09:11:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:09:11:   Error get api/get/Cve:0
+ERROR MainThread 2019-01-14 16:09:11:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:09:11:   INFO start sleep
+INFO MainThread 2019-01-14 16:12:08:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:12:08:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 16:12:13:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:12:13:   Error get api/get/Cve:'dict_keys' object is not subscriptable
+ERROR MainThread 2019-01-14 16:12:13:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:12:13:   INFO start sleep
+INFO MainThread 2019-01-14 16:13:50:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:13:51:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 16:13:56:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:13:56:   Error get api/get/Cve:list indices must be integers or slices, not str
+ERROR MainThread 2019-01-14 16:13:56:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:13:56:   INFO start sleep
+INFO MainThread 2019-01-14 16:15:00:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:15:01:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 16:15:06:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:15:06:   Error get api/get/Cve:list indices must be integers or slices, not str
+ERROR MainThread 2019-01-14 16:15:06:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:15:06:   INFO start sleep
+INFO MainThread 2019-01-14 16:15:23:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:15:23:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 16:15:28:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:15:29:   Error get api/get/Cve:list indices must be integers or slices, not str
+ERROR MainThread 2019-01-14 16:15:29:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:15:29:   INFO start sleep
+INFO MainThread 2019-01-14 16:15:46:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:15:47:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 16:15:52:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:15:52:   Error get api/get/Cve:list indices must be integers or slices, not str
+ERROR MainThread 2019-01-14 16:15:52:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:15:52:   INFO start sleep
+INFO MainThread 2019-01-14 16:17:21:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:17:21:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 16:17:26:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:17:26:   Error get api/get/Cve:must be str, not tuple
+ERROR MainThread 2019-01-14 16:17:26:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:17:26:   INFO start sleep
+INFO MainThread 2019-01-14 16:18:28:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:18:29:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 16:18:34:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:18:34:   Error get api/get/Cve:must be str, not tuple
+ERROR MainThread 2019-01-14 16:18:34:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:18:34:   INFO start sleep
+INFO MainThread 2019-01-14 16:19:31:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:19:33:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 16:19:38:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:19:38:   Error get api/get/Cve:must be str, not tuple
+ERROR MainThread 2019-01-14 16:19:38:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:19:38:   INFO start sleep
+INFO MainThread 2019-01-14 16:20:30:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:20:30:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 16:20:35:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:20:35:   Error get api/get/Cve:must be str, not tuple
+ERROR MainThread 2019-01-14 16:20:35:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:20:36:   INFO start sleep
+INFO MainThread 2019-01-14 16:21:14:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:21:15:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 16:21:20:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:21:20:   Error get api/get/Cve:must be str, not tuple
+ERROR MainThread 2019-01-14 16:21:20:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:21:20:   INFO start sleep
+INFO MainThread 2019-01-14 16:21:57:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:21:58:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 16:22:03:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:22:03:   Error get api/get/Cve:must be str, not tuple
+ERROR MainThread 2019-01-14 16:22:03:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:22:03:   INFO start sleep
+INFO MainThread 2019-01-14 16:22:55:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:22:57:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 16:23:02:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 16:23:02:   INFO finish data-sync for Cve
+INFO MainThread 2019-01-14 16:23:02:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 16:23:02:   INFO start sleep
+INFO MainThread 2019-01-14 16:34:51:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:34:51:   INFO get data from Cve total: 0
+INFO MainThread 2019-01-14 16:34:56:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 16:34:56:   INFO finish data-sync for Cve
+INFO MainThread 2019-01-14 16:34:56:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 16:34:56:   INFO start sleep
+INFO MainThread 2019-01-14 16:35:51:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:35:51:   INFO get data from Cve total: 0
+INFO MainThread 2019-01-14 16:35:56:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 16:35:56:   INFO finish data-sync for Cve
+INFO MainThread 2019-01-14 16:35:56:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 16:35:56:   INFO start sleep
+INFO MainThread 2019-01-14 16:38:55:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:38:55:   INFO get data from Cve total: 0
+INFO MainThread 2019-01-14 16:39:00:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 16:39:00:   INFO finish data-sync for Cve
+INFO MainThread 2019-01-14 16:39:00:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 16:39:00:   INFO start sleep
+INFO MainThread 2019-01-14 16:39:34:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:39:36:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 16:39:41:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:39:41:   Error get api/get/Cve:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''id', 'num', 'score', 'security', 'integrity', 'usability', 'complexity', 'vecto' at line 1")
+ERROR MainThread 2019-01-14 16:39:41:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:39:41:   INFO start sleep
+INFO MainThread 2019-01-14 16:40:15:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:40:17:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 16:40:22:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:40:22:   Error get api/get/Cve:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''id', 'num', 'score', 'security', 'integrity', 'usability', 'complexity', 'vecto' at line 1")
+ERROR MainThread 2019-01-14 16:40:22:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:40:22:   INFO start sleep
+INFO MainThread 2019-01-14 16:43:15:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:43:17:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 16:43:22:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:43:22:   Error get api/get/Cve:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''id', 'num', 'score', 'security', 'integrity', 'usability', 'complexity', 'vecto' at line 1")
+ERROR MainThread 2019-01-14 16:43:22:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:43:22:   INFO start sleep
+INFO MainThread 2019-01-14 16:44:16:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:44:18:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 16:44:23:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:44:23:   Error get api/get/Cve:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''id', 'num', 'score', 'security', 'integrity', 'usability', 'complexity', 'vecto' at line 1")
+ERROR MainThread 2019-01-14 16:44:23:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:44:23:   INFO start sleep
+INFO MainThread 2019-01-14 16:49:39:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:49:39:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 16:49:44:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:49:44:   Error get api/get/Cve:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''id', 'num', 'score', 'security', 'integrity', 'usability', 'complexity', 'vecto' at line 1")
+ERROR MainThread 2019-01-14 16:49:44:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:49:44:   INFO start sleep
+INFO MainThread 2019-01-14 16:50:42:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:50:43:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 16:50:48:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:50:48:   Error get api/get/Cve:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''id', 'num', 'score', 'security', 'integrity', 'usability', 'complexity', 'vecto' at line 1")
+ERROR MainThread 2019-01-14 16:50:48:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:50:48:   INFO start sleep
+INFO MainThread 2019-01-14 16:51:37:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:51:38:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 16:51:43:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:51:43:   Error get api/get/Cve:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''id', 'num', 'score', 'security', 'integrity', 'usability', 'complexity', 'vecto' at line 1")
+ERROR MainThread 2019-01-14 16:51:43:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:51:43:   INFO start sleep
+INFO MainThread 2019-01-14 16:59:26:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 16:59:27:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 16:59:32:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 16:59:32:   Error get api/get/Cve:'secrecy'
+ERROR MainThread 2019-01-14 16:59:32:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 16:59:32:   INFO start sleep
+INFO MainThread 2019-01-14 17:01:21:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 17:01:21:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 17:01:26:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 17:01:26:   Error get api/get/Cve:'secrecy'
+ERROR MainThread 2019-01-14 17:01:26:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 17:01:26:   INFO start sleep
+INFO MainThread 2019-01-14 17:05:22:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 17:05:23:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 17:05:28:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 17:05:28:   Error get api/get/Cve:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''id', 'num', 'score', 'secrecy', 'integrity', 'usability', 'complexity', 'vector' at line 1")
+ERROR MainThread 2019-01-14 17:05:28:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 17:05:28:   INFO start sleep
+INFO MainThread 2019-01-14 17:05:41:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 17:05:42:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 17:05:47:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 17:05:47:   Error get api/get/Cve:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''id', 'num', 'score', 'secrecy', 'integrity', 'usability', 'complexity', 'vector' at line 1")
+ERROR MainThread 2019-01-14 17:05:47:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 17:05:47:   INFO start sleep
+INFO MainThread 2019-01-14 17:07:45:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 17:07:45:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 17:07:50:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 17:07:50:   Error get api/get/Cve:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''id', 'num', 'score', 'secrecy', 'integrity', 'usability', 'complexity', 'vector' at line 1")
+ERROR MainThread 2019-01-14 17:07:50:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 17:07:50:   INFO start sleep
+INFO MainThread 2019-01-14 17:09:29:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 17:09:30:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 17:09:35:   INFO begin insert data to localDB
+ERROR MainThread 2019-01-14 17:09:35:   Error get api/get/Cve:(1062, "Duplicate entry 'CVE-1999-0228' for key 'PRIMARY'")
+ERROR MainThread 2019-01-14 17:09:35:   Error data-sync failed this time !!!
+INFO MainThread 2019-01-14 17:09:35:   INFO start sleep
+INFO MainThread 2019-01-14 17:10:07:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 17:10:08:   INFO get data from Cve total: 7409
+INFO MainThread 2019-01-14 17:10:13:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 17:10:21:   INFO finish data-sync for Cve
+INFO MainThread 2019-01-14 17:10:21:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 17:10:21:   INFO start sleep
+INFO MainThread 2019-01-14 17:13:39:   INFO begin get data from: Cve
+INFO MainThread 2019-01-14 17:13:39:   INFO get data from Cve total: 0
+INFO MainThread 2019-01-14 17:13:44:   INFO begin insert data to localDB
+INFO MainThread 2019-01-14 17:13:44:   INFO finish data-sync for Cve
+INFO MainThread 2019-01-14 17:13:44:   INFO  finish data-sync all database
+INFO MainThread 2019-01-14 17:13:44:   INFO start sleep

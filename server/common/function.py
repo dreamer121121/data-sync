@@ -62,5 +62,5 @@ def json_response(msg, ensure_ascii=False):
     :param msg:
     :return:
     """
-    dumps_params = {'ensure_ascii': ensure_ascii}
+    dumps_params = {'ensure_ascii': False}
     return JsonResponse(msg, json_dumps_params=dumps_params)
