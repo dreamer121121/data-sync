@@ -35,7 +35,7 @@ def getCve(request):
             cves["id"] = row[0]
             cves["num"] = row[1]
             cves["score"] = row[2]
-            cves["security"] = row[3]
+            cves["secrecy"] = row[3]
             cves["integrity"] = row[4]
             cves["usability"] = row[5]
             cves["complexity"] = row[6]
