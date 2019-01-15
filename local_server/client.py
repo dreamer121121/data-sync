@@ -3,10 +3,18 @@ import os.path
 import urllib.parse
 import datetime
 import time
-from cli_config import TIME,DATABASES,FIRST_TIME,REMOTE_ADDRS,conn
+from cli_config import conn
 import logging.config
 import re
 import json
+
+
+f = open('config_params.txt','r')
+CONFIG = json.loads(f.read())
+TIME = CONFIG['TIME']
+DATABASES = CONFIG['DATABASES']
+REMOTE_ADDRS =  CONFIG['REMOTE_ADDRS']
+FIRST_TIME = CONFIG['FIRST_TIME']
 
 
 
