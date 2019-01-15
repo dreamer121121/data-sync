@@ -43,7 +43,7 @@ def get_lasttime():
     lastime = f.readlines()
     f.close()
     if not lastime:
-        lastime = FIRST_TIME
+        lastime = FIRST_TIME #只用于第一次同步时使用这一参数（用户不可更改公司根据给客户安装的数据库的日期进行更改）
     else:
         lastime = lastime[-1]
         lastime = re.search('(\d+.*) ' ,lastime).group(0)
