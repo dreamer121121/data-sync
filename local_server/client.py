@@ -3,18 +3,18 @@ import os.path
 import urllib.parse
 import datetime
 import time
-from cli_config import conn
 import logging.config
 import re
 import json
+import pymysql
+from cli_config import DATABASES
 
-"""获取配置信息"""
-f = open('config_params.txt','r')
-CONFIG = json.loads(f.read())
-TIME = CONFIG['TIME']
-DATABASES = CONFIG['DATABASES']
-REMOTE_ADDRS =  CONFIG['REMOTE_ADDRS']
-FIRST_TIME = CONFIG['FIRST_TIME']
+
+TIME = 0
+TABLES = []
+REMOTE_ADDRS = ''
+FIRST_TIME = ''
+
 
 
 
@@ -22,6 +22,26 @@ logging_config = os.path.join(os.path.dirname(__file__), 'logging.conf')#logging
 logging.config.fileConfig(logging_config)
 logger = logging.getLogger('root')
 
+
+def get_config():
+
+    """
+    get config_params
+    :return:
+    """
+
+    global TIME,TABLES,REMOTE_ADDRS,FIRST_TIME #声明全局变量
+    f = open('config_params.txt','r')
+    CONFIG = json.loads(f.read())
+    TIME = int(CONFIG['TIME'])
+    TABLES = CONFIG['TABLES']
+    REMOTE_ADDRS =  CONFIG['REMOTE_ADDRS']
+    FIRST_TIME = CONFIG['FIRST_TIME'] #只在第一次同步时使用（客户不可更改）
+
+
+def create_conn(db_name):
+    conn = pymysql.connect(user=DATABASES[db_name]['USER'], database=DATABASES[db_name]['NAME'], password=DATABASES[db_name]['PASSWORD'])
+    return conn
 
 def _write_in_history(now):
     """
@@ -81,9 +101,10 @@ def pull_data():
     """
     error_db_info = ''
     base_urls = []
-    for db in DATABASES:
-        base_url = REMOTE_ADDRS+db+"?"
-        base_urls.append(base_url)
+    for table in TABLES:
+        root_url = ""
+        root_url = REMOTE_ADDRS+table+"?"
+        base_urls.append(root_url)
 
     now = datetime.datetime.now()
     date = str(now)[0:10]
@@ -93,15 +114,19 @@ def pull_data():
     try:
         for base_url in base_urls:
             error_db_info = base_url
-            db_name = base_url[33:36]
+            table_name = base_url[33:36]
             url = _create_url(base_url,params)
-            logger.info("INFO begin get data from: "+db_name)
+            print('----98----',url)
+            logger.info("INFO begin get data from: "+table_name)
+            print('----url----',url)
             data = requests.get(url).json()
-            logger.info("INFO get data from "+db_name+" total: "+str(len(data['detail'])))
+            logger.info("INFO get data from "+table_name+" total: "+str(len(data['detail'])))
+
+            logger.info("INFO begin insert data to "+table_name)
             time.sleep(5)
-            logger.info("INFO begin insert data to "+db_name)
-            insert_data(data,db_name)
-            logger.info("INFO finish data-sync for "+db_name)
+
+            insert_data(data,table_name)
+            logger.info("INFO finish data-sync for "+table_name)
 
         logger.info("INFO  finish data-sync all database")
         _write_in_history(now)  # 写入success_history
@@ -111,67 +136,109 @@ def pull_data():
         logger.error("Error data-sync failed this time !!!")
 
 
+def db2fields(table_name):
 
-def insert_data(content,db_name):
+    DB2fields={}
+    DB2fields['Cve'] = ['id', 'num', 'score', 'secrecy', 'integrity', 'usability', 'complexity', 'vectorofattack', 'identify',
+                 'kind', 'cpe', 'finddate', 'summary', 'update_time']
+    DB2fields['vulnerability'] = ['name', 'vendor', 'level', 'description', 'url', 'mitigation', 'provider', 'update_time']
+    DB2fields['Dev2vul'] = ['name', 'device', 'vulnerability','update_time']
+    DB2fields['Conpot_log'] = ['date','time','function_id','protocol','request','destIP','sourcePort','DestPort','slaveID',
+                               'sourceIP','response','country','subdivision','city','coordinate']
+
+
+    return DB2fields[table_name]
+
+def create_sql(data,fields,table_name):
+
+    sql = 'replace into cve' + str(tuple(fields))  # 去重
+    values = []
+    sql = sql.replace('\'', '')
+    sql_values = ' values'
+    for field in fields:
+        values.append(data[field])
+    values = str(tuple(values))
+    sql_values += values
+    sql += sql_values
+    return sql
+
+
+
+
+def insert_data(content,table_name):
 
     """
     insert data into localDB
     :param content:
-    :param db_name:
+    :param table_name:
     :return:
     """
+    if table_name == 'Cve':
 
-    if db_name == 'Cve':
-
-        fields =['id', 'num', 'score', 'secrecy', 'integrity', 'usability', 'complexity', 'vectorofattack', 'identify',
-                 'kind', 'cpe', 'finddate', 'summary', 'update_time']
-
+        db_name = 'ics'
+        fields =db2fields(table_name)
         content = content['detail']
+        conn = create_conn(db_name)
         if content:
             for data in content:
-                values = []
-                sql = 'replace into cve'+str(tuple(fields))#去重
-                sql = sql.replace('\'','')
-                sql_values = ' values'
-                for field in fields:
-                    values.append(data[field])
-                values = str(tuple(values))
-                values=values
-                print(values)
-                sql_values += values
-                sql += sql_values
+                sql = create_sql(data,fields,table_name) #逐条插入
                 cursor = conn.cursor()
                 cursor.execute(sql)
+        else:
+            pass
 
-    elif db_name == 'Cnvd':
+    elif table_name == 'Vulnerability':
 
-        fields =['name', 'vendor', 'level', 'description', 'url', 'mitigation', 'provider', 'update_time']
+        db_name = 'ics_scan'
+        fields =db2fields(table_name)
         content = content['detail']
+        conn = create_conn(db_name)
+        
         if content:
             for data in content:
-                values = []
-                sql = 'replace into cve'+str(tuple(fields))#去重
-                sql = sql.replace('\'','')#去除sql中的'号
-                sql_values = ' values'
-                for field in fields:
-                    values.append(data[field])
-                values = str(tuple(values))
-                values=values
-                print(values)
-                sql_values += values
-                sql += sql_values
+                sql = create_sql(data,fields,table_name) #逐条插入
                 cursor = conn.cursor()
                 cursor.execute(sql)
+        else:
+            pass
 
+    elif table_name == 'Dev2vul':
 
+        db_name = 'ics_scan'
+        fields = db2fields(table_name)
+        content = content['detail']
+        conn = create_conn(db_name)
+        if content:
+            for data in content:
+                sql = create_sql(data,fields,table_name) #逐条插入
+                cursor = conn.cursor()
+                cursor.execute(sql)
+        else:
+            pass
+
+    elif table_name == 'Conpot_log':
+
+        db_name = 'ics'
+        fields = db2fields(table_name)
+        content = content['detail']
+        conn = create_conn(db_name)
+        if content:
+            for data in content:
+                sql = create_sql(data,fields,table_name) #逐条插入
+                cursor = conn.cursor()
+                cursor.execute(sql)
+        else:
+            pass
 
 
 if __name__ == '__main__':
+
     if not os.path.exists('success_history.txt'):
         f = open('success_history.txt', 'w')
         f.close()
 
     while True:
+        get_config()
         pull_data()
         logger.info("INFO start sleep")
         time.sleep(TIME)  # //完成一次拉取开始休眠

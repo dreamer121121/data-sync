@@ -4,10 +4,27 @@ import json,urllib.parse
 
 
 """配置数据库"""
-conn = pymysql.connect(user='root',database='ics',password='123456')
+
+DATABASES = {
+    'ics': {
+        'NAME': 'ics',
+        'USER': 'root',
+        'PASSWORD': '123456',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    },
+    'ics_scan': {
+        'NAME': 'ics_scan',
+        'USER': 'root',
+        'PASSWORD': '123456',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    },
+}
+
 
 """配置本地服务器"""
-data = {'result': 'this is a test'}
+data = {'result': 'data-sync config succeed'}
 host = ('localhost', 8888)
 
 """配置数据同步默认参数"""
@@ -17,11 +34,11 @@ TIME = 60
 #配置远程服务器地址
 REMOTE_ADDRS = 'http://192.168.1.40:8000/api/get/'
 # 配置拉取的数据库
-DATABASES = ['Cve']
+TABLES = ['Cve']
 #第一次拉取开始日期（给客户安装数据库的时间而定）
-FIRST_TIME = '2016-01-01'
+FIRST_TIME = '2019-01-01'
 
-params = {'TIME':TIME,'REMOTE_ADDRS':REMOTE_ADDRS,'DATABASES':DATABASES,'FIRST_TIME':FIRST_TIME}
+params = {'TIME':TIME,'REMOTE_ADDRS':REMOTE_ADDRS,'TABLES':TABLES,'FIRST_TIME':FIRST_TIME}
 
 
 class Resquest(BaseHTTPRequestHandler):
@@ -37,11 +54,11 @@ class Resquest(BaseHTTPRequestHandler):
                 self.queryList = self.queryList.split('&')
                 for item in self.queryList:
                     key,value = item.split('=')
-                    if key == 'DATABASES':
-                        db_list = value.split('=')
+                    if key == 'TABLES':
+                        db_list = value.split(',')
                         params[key] = db_list
                     elif key == 'REMOTE_ADDRS':
-                        params['REMOTE_ADDRS'] = 'http://'+value+"8000"+'/api/get/'
+                        params['REMOTE_ADDRS'] = 'http://'+value+":8000"+'/api/get/'
                     else:
                         if params[key] != value:
                             params[key] = value

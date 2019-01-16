@@ -7,7 +7,7 @@ urlpatterns = [
 
     #"""CNVD相关表"""
     url(r'^api/get/Dev2vul$',views.getdev2vul),
-    url(r'^api/get/Cnvd$',views.getCnvd),
+    url(r'^api/get/Vulnerability$',views.getCnvd),
 
     #"""设备信息相关表"""
     url(r'^api/get/Instance_info$',views.getinstance),
