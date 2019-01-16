@@ -31,7 +31,6 @@ class Resquest(BaseHTTPRequestHandler):
     更改数据同步的配置参数
     """
     def do_GET(self):
-
         try:
             if '?' in self.path:
                 self.queryList = urllib.parse.unquote(self.path.split('?', 1)[1])
@@ -62,7 +61,7 @@ class Resquest(BaseHTTPRequestHandler):
 
 if __name__ == '__main__':
 
-    """将默认数据同步参数写入文件"""
+    """将默认数据同步参数写入配置文件"""
     f = open('config_params.txt', 'w')
     f.write(json.dumps(params))
     f.close()

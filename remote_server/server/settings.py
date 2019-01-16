@@ -125,6 +125,14 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '3306',
     },
+    'ics_scan': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'ics_scan',
+        'USER': 'root',
+        'PASSWORD': '123456',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    },
 }
 
 

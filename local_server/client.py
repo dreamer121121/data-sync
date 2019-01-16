@@ -8,7 +8,7 @@ import logging.config
 import re
 import json
 
-
+"""获取配置信息"""
 f = open('config_params.txt','r')
 CONFIG = json.loads(f.read())
 TIME = CONFIG['TIME']
@@ -122,6 +122,7 @@ def insert_data(content,db_name):
     """
 
     if db_name == 'Cve':
+
         fields =['id', 'num', 'score', 'secrecy', 'integrity', 'usability', 'complexity', 'vectorofattack', 'identify',
                  'kind', 'cpe', 'finddate', 'summary', 'update_time']
 
@@ -143,7 +144,26 @@ def insert_data(content,db_name):
                 cursor.execute(sql)
 
     elif db_name == 'Cnvd':
-        pass
+
+        fields =['name', 'vendor', 'level', 'description', 'url', 'mitigation', 'provider', 'update_time']
+        content = content['detail']
+        if content:
+            for data in content:
+                values = []
+                sql = 'replace into cve'+str(tuple(fields))#去重
+                sql = sql.replace('\'','')#去除sql中的'号
+                sql_values = ' values'
+                for field in fields:
+                    values.append(data[field])
+                values = str(tuple(values))
+                values=values
+                print(values)
+                sql_values += values
+                sql += sql_values
+                cursor = conn.cursor()
+                cursor.execute(sql)
+
+
 
 
 if __name__ == '__main__':
