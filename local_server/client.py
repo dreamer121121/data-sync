@@ -116,10 +116,10 @@ def pull_data():
             error_db_info = base_url
             table_name = base_url[33:36]
             url = _create_url(base_url,params)
-            print('----98----',url)
             logger.info("INFO begin get data from: "+table_name)
             print('----url----',url)
             data = requests.get(url).json()
+            print(data)
             logger.info("INFO get data from "+table_name+" total: "+str(len(data['detail'])))
 
             logger.info("INFO begin insert data to "+table_name)
@@ -151,7 +151,8 @@ def db2fields(table_name):
 
 def create_sql(data,fields,table_name):
 
-    sql = 'replace into cve' + str(tuple(fields))  # 去重
+
+    sql = 'replace into '+ table_name + str(tuple(fields))  # 去重
     values = []
     sql = sql.replace('\'', '')
     sql_values = ' values'

@@ -63,7 +63,7 @@ def getCnvd(request):
     DATABASE = settings.DATABASES['ics_scan']
     try:
         start_date, end_date = process_request(request)
-        sql = 'select * from knowledgebase_vulnerability where update_time >='+'\''+start_date+'\''+' and update_time <= '+'\''+end_date+'\''
+        sql = 'select * from knowledgeBase_vulnerability where update_time >='+'\''+start_date+'\''+' and update_time <= '+'\''+end_date+'\''
         cursor = Connect(DATABASE)
         cursor.execute(sql)
         rows = cursor.fetchall()
