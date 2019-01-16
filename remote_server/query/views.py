@@ -94,7 +94,7 @@ def getdev2vul(request):
     DATABASE = settings.DATABASES['ics_scan']
     try:
         start_date, end_date = process_request(request)
-        sql = 'select * from knowledgebase_dev2vul where update_time >='+'\''+start_date+'\''+' and update_time <= '+'\''+end_date+'\''
+        sql = 'select * from knowledgeBase_dev2vul where update_time >='+'\''+start_date+'\''+' and update_time <= '+'\''+end_date+'\''
         cursor = Connect(DATABASE)
         cursor.execute(sql)
         rows = cursor.fetchall()

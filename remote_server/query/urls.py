@@ -13,5 +13,5 @@ urlpatterns = [
     url(r'^api/get/Instance_info$',views.getinstance),
 
     #"""攻击信息相关表"""
-    url(r'^api/get/Attack$',views.getAttack),
+    url(r'^api/get/Conpot_log$',views.getAttack),
 ]

@@ -119,7 +119,6 @@ def pull_data():
             logger.info("INFO begin get data from: "+table_name)
             print('----url----',url)
             data = requests.get(url).json()
-            print(data)
             logger.info("INFO get data from "+table_name+" total: "+str(len(data['detail'])))
 
             logger.info("INFO begin insert data to "+table_name)
@@ -151,7 +150,10 @@ def db2fields(table_name):
 
 def create_sql(data,fields,table_name):
 
-
+    if table_name == 'Vulnerability':
+        table_name = 'knowledgeBase_vulnerability'
+    elif table_name == 'Dev2vul':
+        table_name = 'knowledgeBase_dev2vul'
     sql = 'replace into '+ table_name + str(tuple(fields))  # 去重
     values = []
     sql = sql.replace('\'', '')
@@ -203,7 +205,7 @@ def insert_data(content,table_name):
         else:
             pass
 
-    elif table_name == 'Dev2vul':
+    elif table_name == 'Ddev2vul':
 
         db_name = 'ics_scan'
         fields = db2fields(table_name)
