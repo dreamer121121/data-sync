@@ -1,6 +1,8 @@
 import pymysql
 from http.server import HTTPServer, BaseHTTPRequestHandler
-import json,urllib.parse
+import json,urllib.parse,os
+
+
 
 
 """配置数据库"""
@@ -24,7 +26,7 @@ DATABASES = {
 
 
 """配置本地服务器"""
-data = {'result': 'data-sync config succeed'}
+config_result = 'success'
 host = ('localhost', 8888)
 
 """配置数据同步默认参数"""
@@ -40,6 +42,25 @@ FIRST_TIME = '2019-01-01'
 
 params = {'TIME':TIME,'REMOTE_ADDRS':REMOTE_ADDRS,'TABLES':TABLES,'FIRST_TIME':FIRST_TIME}
 
+
+def get_lasttime():
+    """
+    get lasttime history
+    :return:
+    """
+    if not os.path.exists('success_history.txt'):
+        f = open('success_history.txt', 'w')
+        f.close()
+
+    f = open('success_history.txt','r')
+    lastime = f.readlines()
+    f.close()
+    if not lastime:
+        lastime = FIRST_TIME #只用于第一次同步时使用这一参数（用户不可更改公司根据给客户安装的数据库的日期进行更改）
+    else:
+        lastime = lastime[-1]
+        print('----32----',lastime)
+    return lastime
 
 class Resquest(BaseHTTPRequestHandler):
 
@@ -71,10 +92,27 @@ class Resquest(BaseHTTPRequestHandler):
                 self.send_response(200)
                 self.send_header('Content-type', 'application/json')
                 self.end_headers()
-                self.wfile.write(json.dumps(data).encode())
+                status = self.get_return_message()
+                print('-----92-----',type(status))
+                status['result'] = config_result
+                print(status)
+                self.wfile.write(json.dumps(status).encode())
         except:
-            msg={'error':'config failed'}
-            self.wfile.write(json.dumps(msg))
+            msg={'error':'failed'}
+            print(msg)
+            self.wfile.write(json.dumps(msg).encode())
+
+
+    def get_return_message(self):
+        print('-----103-----')
+        status_message = {}
+        self.lastime = get_lasttime()
+        status_message['lastime'] = self.lastime
+        return  status_message
+
+
+
+
 
 if __name__ == '__main__':
 

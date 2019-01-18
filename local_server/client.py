@@ -241,7 +241,8 @@ if __name__ == '__main__':
         f.close()
 
     while True:
+        second = TIME*3600 #把小时转换为秒
         get_config()
         pull_data()
         logger.info("INFO start sleep")
-        time.sleep(TIME)  # //完成一次拉取开始休眠
+        time.sleep(second)  # //完成一次拉取开始休眠
