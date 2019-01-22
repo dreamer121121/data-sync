@@ -6,6 +6,7 @@ import sys
 import requests
 import os
 from config import local_server
+import datetime
 
 # """ 语音播报信息"""
 # APP_ID = '14442796'
@@ -43,15 +44,38 @@ class Main_Window(QMainWindow, Ui_main_MainWindow):
         url = local_server+'TIME='+TIME+'&REMOTE_ADDRS='+REMOTE_ADDRS+'&TABLES='+TABLES+'&FIRST_TIME='+FIRST_TIME
         print('-----url----',url)
         content = requests.get(url).json()
-        print(content)
+        print('----47-----',content)
         if content['result'] == 'success':
             message = '参数配置成功'
             QMessageBox.information(self, "Message", message)
+
+            # #显示系统状态信息
+            # self.label_12.setText(content['lastime'])
+            # time_span = self.lineEdit.text
+
+            # currentTime = content['lasttime']
+            # temp =  datetime.datetime.strptime(currentTime, '%Y-%m-%d %H:%M:%S')
+            # print(temp)
+            # print(currentTime)
+            # self.label_11.setText(datetime.datetime.)
 
         elif content['result'] == 'failed':
             message = '配置失败'
             QMessageBox.information(self, "Message", message)
 
+
+    def get_config(self):
+        url = local_server.strip('?')
+        params = requests.get(url).json()
+        self.label_12.setText(params['lastime'])
+        self.label_11.setText(str(params['TIME']))
+        self.label_15.setText(params['REMOTE_ADDRS'][7:18])
+        tables = ''
+        for table in params['TABLES']:
+            table = table.strip('\'')
+            tables += table
+            tables += ','
+        self.label_16.setText(tables)
 
 
 class Login_Window(QMainWindow, Ui_Login_MainWindow):
@@ -60,7 +84,7 @@ class Login_Window(QMainWindow, Ui_Login_MainWindow):
         self.setupUi(self)
 
     def slot1(self):
-        if self.lineEdit.text() == '' and self.lineEdit_2.text() == '':
+        if self.lineEdit.text() == 'rhzz' and self.lineEdit_2.text() == '1234.com':
             self.hide()
             self.main = Main_Window()
             self.main.show()

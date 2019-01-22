@@ -115,7 +115,12 @@ def getdev2vul(request):
         return json_response(error_msg(E000.code,E000.msg))
 
 
-def getinstance():
+def getInstance():
+    pass
+
+
+
+def getInstancport():
     pass
 
 def getAttack(request):

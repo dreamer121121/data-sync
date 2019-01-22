@@ -30,7 +30,7 @@ def get_config():
     :return:
     """
 
-    global TIME,TABLES,REMOTE_ADDRS,FIRST_TIME #声明全局变量
+    global TIME,TABLES,REMOTE_ADDRS,FIRST_TIME
     f = open('config_params.txt','r')
     CONFIG = json.loads(f.read())
     TIME = int(CONFIG['TIME'])
@@ -64,10 +64,10 @@ def get_lasttime():
     f.close()
     if not lastime:
         lastime = FIRST_TIME #只用于第一次同步时使用这一参数（用户不可更改公司根据给客户安装的数据库的日期进行更改）
+        lastime = re.search('(\d+.*) ' ,lastime).group(0)
     else:
         lastime = lastime[-1]
         lastime = re.search('(\d+.*) ' ,lastime).group(0)
-        print('----32----',lastime)
     return lastime
 
 def _create_params(lastime,now):
@@ -103,7 +103,7 @@ def pull_data():
     base_urls = []
     for table in TABLES:
         root_url = ""
-        root_url = REMOTE_ADDRS+table+"?"
+        root_url += REMOTE_ADDRS+table+"?"
         base_urls.append(root_url)
 
     now = datetime.datetime.now()
@@ -116,8 +116,8 @@ def pull_data():
             error_db_info = base_url
             table_name = base_url[33:36]
             url = _create_url(base_url,params)
+            print('------119-----',url)
             logger.info("INFO begin get data from: "+table_name)
-            print('----url----',url)
             data = requests.get(url).json()
             logger.info("INFO get data from "+table_name+" total: "+str(len(data['detail'])))
 
@@ -140,10 +140,13 @@ def db2fields(table_name):
     DB2fields={}
     DB2fields['Cve'] = ['id', 'num', 'score', 'secrecy', 'integrity', 'usability', 'complexity', 'vectorofattack', 'identify',
                  'kind', 'cpe', 'finddate', 'summary', 'update_time']
-    DB2fields['vulnerability'] = ['name', 'vendor', 'level', 'description', 'url', 'mitigation', 'provider', 'update_time']
+    DB2fields['Vulnerability'] = ['name', 'vendor', 'level', 'description', 'url', 'mitigation', 'provider', 'update_time']
     DB2fields['Dev2vul'] = ['name', 'device', 'vulnerability','update_time']
     DB2fields['Conpot_log'] = ['date','time','function_id','protocol','request','destIP','sourcePort','DestPort','slaveID',
                                'sourceIP','response','country','subdivision','city','coordinate']
+    DB2fields['Knowledgebase_instance'] = ['name','vendor','ip','city','country','continent','asn','lat','lon',
+                                           'hostname','service','os','app','extrainfo','version','timestamp']
+    DB2fields['Knowledgebase_instanceport'] = ['id','ip','port','nw_proto','protocol','banner','status','add_time','update_time','instance_id']
 
 
     return DB2fields[table_name]
@@ -241,8 +244,8 @@ if __name__ == '__main__':
         f.close()
 
     while True:
-        second = TIME*3600 #把小时转换为秒
-        get_config()
+        get_config()    #每一个拉取循环都要重新获取配置参数
+        SECOND = TIME*3600 #把小时转换为秒
         pull_data()
         logger.info("INFO start sleep")
-        time.sleep(second)  # //完成一次拉取开始休眠
+        time.sleep(SECOND)  # //完成一次拉取开始休眠

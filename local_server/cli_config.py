@@ -36,9 +36,9 @@ TIME = 60
 #配置远程服务器地址
 REMOTE_ADDRS = 'http://192.168.1.40:8000/api/get/'
 # 配置拉取的数据库
-TABLES = ['Cve']
+TABLES = ['Cve','Vulnerability','Dev2vul','Conpot_log','Instance','Instanceport']
 #第一次拉取开始日期（给客户安装数据库的时间而定）
-FIRST_TIME = '2019-01-01'
+FIRST_TIME = '2019-01-01 00:00:00'
 
 params = {'TIME':TIME,'REMOTE_ADDRS':REMOTE_ADDRS,'TABLES':TABLES,'FIRST_TIME':FIRST_TIME}
 
@@ -70,7 +70,7 @@ class Resquest(BaseHTTPRequestHandler):
     """
     def do_GET(self):
         try:
-            if '?' in self.path:
+            if '?' in self.path:#配置接口
                 self.queryList = urllib.parse.unquote(self.path.split('?', 1)[1])
                 self.queryList = self.queryList.split('&')
                 for item in self.queryList:
@@ -92,24 +92,38 @@ class Resquest(BaseHTTPRequestHandler):
                 self.send_response(200)
                 self.send_header('Content-type', 'application/json')
                 self.end_headers()
-                status = self.get_return_message()
-                print('-----92-----',type(status))
+                status = {}
                 status['result'] = config_result
-                print(status)
+                print('-----97----',status)
                 self.wfile.write(json.dumps(status).encode())
+
+            else:#查询接口
+                self.send_response(200)
+                self.send_header('Content-type', 'application/json')
+                self.end_headers()
+                print('-----查询接口-----')
+                status_message = self.get_return_message()
+                print('----103----',type(status_message))
+                print(status_message)
+                self.wfile.write(json.dumps(status_message).encode())
+
+
         except:
             msg={'error':'failed'}
-            print(msg)
             self.wfile.write(json.dumps(msg).encode())
 
 
     def get_return_message(self):
-        print('-----103-----')
         status_message = {}
         self.lastime = get_lasttime()
         status_message['lastime'] = self.lastime
+        f = open('config_params.txt')
+        params = json.loads(f.read())
+        status_message['TIME'] = params['TIME']
+        status_message['REMOTE_ADDRS'] = params['REMOTE_ADDRS']
+        status_message['TABLES'] = params['TABLES']
+        print(status_message)
         return  status_message
-
 
 
 
