@@ -144,9 +144,9 @@ def db2fields(table_name):
     DB2fields['Dev2vul'] = ['name', 'device', 'vulnerability','update_time']
     DB2fields['Conpot_log'] = ['date','time','function_id','protocol','request','destIP','sourcePort','DestPort','slaveID',
                                'sourceIP','response','country','subdivision','city','coordinate']
-    DB2fields['Knowledgebase_instance'] = ['name','vendor','ip','city','country','continent','asn','lat','lon',
+    DB2fields['Instance'] = ['name','vendor','ip','city','country','continent','asn','lat','lon',
                                            'hostname','service','os','app','extrainfo','version','timestamp']
-    DB2fields['Knowledgebase_instanceport'] = ['id','ip','port','nw_proto','protocol','banner','status','add_time','update_time','instance_id']
+    DB2fields['Instanceport'] = ['id','ip','port','nw_proto','protocol','banner','status','add_time','update_time','instance_id']
 
 
     return DB2fields[table_name]
@@ -157,6 +157,11 @@ def create_sql(data,fields,table_name):
         table_name = 'knowledgeBase_vulnerability'
     elif table_name == 'Dev2vul':
         table_name = 'knowledgeBase_dev2vul'
+    elif table_name == 'Instance':
+        table_name = 'knowledgeBase_instance'
+    elif table_name == 'Instanceport':
+        table_name = 'knowledgeBase_instanceport'
+
     sql = 'replace into '+ table_name + str(tuple(fields))  # 去重
     values = []
     sql = sql.replace('\'', '')
@@ -225,6 +230,34 @@ def insert_data(content,table_name):
     elif table_name == 'Conpot_log':
 
         db_name = 'ics'
+        fields = db2fields(table_name)
+        content = content['detail']
+        conn = create_conn(db_name)
+        if content:
+            for data in content:
+                sql = create_sql(data,fields,table_name) #逐条插入
+                cursor = conn.cursor()
+                cursor.execute(sql)
+        else:
+            pass
+
+    elif table_name == 'Instance':
+
+        db_name = 'ics_scan'
+        fields = db2fields(table_name)
+        content = content['detail']
+        conn = create_conn(db_name)
+        if content:
+            for data in content:
+                sql = create_sql(data,fields,table_name) #逐条插入
+                cursor = conn.cursor()
+                cursor.execute(sql)
+        else:
+            pass
+
+    elif table_name == 'Instanceport':
+
+        db_name = 'ics_scan'
         fields = db2fields(table_name)
         content = content['detail']
         conn = create_conn(db_name)
