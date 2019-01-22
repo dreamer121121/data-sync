@@ -59,6 +59,7 @@ class Ui_Login_MainWindow(object):
         self.label.setObjectName("label")
         self.lineEdit_2 = QtWidgets.QLineEdit(self.frame_2)
         self.lineEdit_2.setGeometry(QtCore.QRect(350, 140, 131, 20))
+        self.lineEdit_2.setEchoMode(QtWidgets.QLineEdit.Password)
         self.lineEdit_2.setObjectName("lineEdit_2")
         self.label_2 = QtWidgets.QLabel(self.frame_2)
         self.label_2.setGeometry(QtCore.QRect(290, 140, 54, 21))

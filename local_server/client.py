@@ -40,7 +40,7 @@ def get_config():
 
 
 def create_conn(db_name):
-    conn = pymysql.connect(user=DATABASES[db_name]['USER'], database=DATABASES[db_name]['NAME'], password=DATABASES[db_name]['PASSWORD'])
+    conn = pymysql.connect(host=DATABASES[db_name]['HOST'],user=DATABASES[db_name]['USER'], database=DATABASES[db_name]['NAME'], password=DATABASES[db_name]['PASSWORD'])
     return conn
 
 def _write_in_history(now):
@@ -49,7 +49,6 @@ def _write_in_history(now):
     :param now:the date of success_sync
     :return:
     """
-
     f = open('success_history.txt', 'w')
     f.write("本次同步时间："+str(now))
     f.close()
@@ -106,17 +105,18 @@ def pull_data():
         root_url += REMOTE_ADDRS+table+"?"
         base_urls.append(root_url)
 
-    now = datetime.datetime.now()
-    date = str(now)[0:10]
+    now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    enddate = str(now)[0:10]
     lastime = get_lasttime()
-    params = _create_params(lastime,date)
+    params = _create_params(lastime,enddate)
 
     try:
         for base_url in base_urls:
-            error_db_info = base_url
             table_name = re.search(r'get/(\w+)?',base_url).group(1)
+            error_db_info = table_name
             url = _create_url(base_url,params)
-            print('------119-----',url)
+
+            logger.info("**********"+lastime+" --- "+enddate+"**********")
             logger.info("INFO begin get data from: "+table_name)
             data = requests.get(url).json()
             logger.info("INFO get data from "+table_name+" total: "+str(len(data['detail'])))
@@ -131,7 +131,11 @@ def pull_data():
         _write_in_history(now)  # 写入success_history
 
     except Exception as e:
-        logger.error("Error get "+error_db_info[25:36]+':%s'%e)
+        error_f = open('error_history.txt','w')
+        error_f.write("最近一次错误：Error get "+error_db_info+':%s'%e)
+        error_f.close()
+
+        logger.error("Error get "+error_db_info+':%s'%e)
         logger.error("Error data-sync failed this time !!!")
 
 
@@ -152,7 +156,7 @@ def db2fields(table_name):
     return DB2fields[table_name]
 
 def create_sql(data,fields,table_name):
-
+    table_name = table_name.lower()
     if table_name == 'Vulnerability':
         table_name = 'knowledgeBase_vulnerability'
     elif table_name == 'Dev2vul':
@@ -171,6 +175,7 @@ def create_sql(data,fields,table_name):
     values = str(tuple(values))
     sql_values += values
     sql += sql_values
+    # sql = sql.replace('\'', '')
     return sql
 
 
@@ -185,7 +190,6 @@ def insert_data(content,table_name):
     :return:
     """
     if table_name == 'Cve':
-
         db_name = 'ics'
         fields =db2fields(table_name)
         content = content['detail']
@@ -195,8 +199,10 @@ def insert_data(content,table_name):
                 sql = create_sql(data,fields,table_name) #逐条插入
                 cursor = conn.cursor()
                 cursor.execute(sql)
+                conn.commit()
         else:
             pass
+
 
     elif table_name == 'Vulnerability':
 
@@ -210,6 +216,7 @@ def insert_data(content,table_name):
                 sql = create_sql(data,fields,table_name) #逐条插入
                 cursor = conn.cursor()
                 cursor.execute(sql)
+                conn.commit()
         else:
             pass
 
@@ -224,6 +231,7 @@ def insert_data(content,table_name):
                 sql = create_sql(data,fields,table_name) #逐条插入
                 cursor = conn.cursor()
                 cursor.execute(sql)
+                conn.commit()
         else:
             pass
 
@@ -238,6 +246,7 @@ def insert_data(content,table_name):
                 sql = create_sql(data,fields,table_name) #逐条插入
                 cursor = conn.cursor()
                 cursor.execute(sql)
+                conn.commit()
         else:
             pass
 
@@ -252,6 +261,7 @@ def insert_data(content,table_name):
                 sql = create_sql(data,fields,table_name) #逐条插入
                 cursor = conn.cursor()
                 cursor.execute(sql)
+                conn.commit()
         else:
             pass
 
@@ -266,6 +276,7 @@ def insert_data(content,table_name):
                 sql = create_sql(data,fields,table_name) #逐条插入
                 cursor = conn.cursor()
                 cursor.execute(sql)
+                conn.commit()
         else:
             pass
 
@@ -274,6 +285,10 @@ if __name__ == '__main__':
 
     if not os.path.exists('success_history.txt'):
         f = open('success_history.txt', 'w')
+        f.close()
+
+    if not os.path.exists('error_history.txt'):
+        f = open('error_history.txt', 'w')
         f.close()
 
     while True:

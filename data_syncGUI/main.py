@@ -4,7 +4,7 @@ from UI_mainwindow import Ui_main_MainWindow
 from aip import AipSpeech
 import sys
 import requests
-import os
+import os,re
 from config import local_server
 import datetime
 
@@ -30,21 +30,38 @@ class Main_Window(QMainWindow, Ui_main_MainWindow):
         # cmd = 'auido.mp3'
         # os.system(cmd)
 
+    def checkip(self):
+        p = re.compile(r'^((25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(25[0-5]|2[0-4]\d|[01]?\d\d?)$')
+        if p.match(self.lineEdit_2.text()) and self.lineEdit_2.text() != '':
+            return True
+        else:
+            return False
+
+
     def config(self):
-        TIME = self.lineEdit.text()
-        REMOTE_ADDRS = self.lineEdit_2.text()
+        if self.lineEdit.text():
+            TIME = self.lineEdit.text()
+        else:
+            TIME = '24'
+
+        if self.checkip():
+            REMOTE_ADDRS = self.lineEdit_2.text()
+        else:
+            REMOTE_ADDRS = '192.168.1.40'
+
         FIRST_TIME = self.lineEdit_4.text()
         TABLES = ''
         if self.checkBox:
             TABLES += 'Cve,'
         if self.checkBox_2:
-            TABLES += 'Vulnerability,Ddev2vul,'
+            TABLES += 'Vulnerability,Dev2vul,'
         if self.checkBox_3:
-            TABLES += 'Conpot_log'
+            TABLES += 'Conpot_log,'
+        if self.checkBox_4:
+            TABLES += 'Instance,Instanceport'
         url = local_server+'TIME='+TIME+'&REMOTE_ADDRS='+REMOTE_ADDRS+'&TABLES='+TABLES+'&FIRST_TIME='+FIRST_TIME
-        print('-----url----',url)
+
         content = requests.get(url).json()
-        print('----47-----',content)
         if content['result'] == 'success':
             message = '参数配置成功'
             QMessageBox.information(self, "Message", message)
@@ -66,16 +83,25 @@ class Main_Window(QMainWindow, Ui_main_MainWindow):
 
     def get_config(self):
         url = local_server.strip('?')
+
         params = requests.get(url).json()
+
+        if params['IFERROR']:
+            self.radioButton_2.setChecked(True)
+            self.textBrowser.setText(params['IFERROR'])
+        else:
+            self.radioButton_3.setChecked(True)
         self.label_12.setText(params['lastime'])
         self.label_11.setText(str(params['TIME']))
         self.label_15.setText(params['REMOTE_ADDRS'][7:18])
+
         tables = ''
         for table in params['TABLES']:
             table = table.strip('\'')
             tables += table
             tables += ','
-        self.label_16.setText(tables)
+        self.textBrowser_2.setText(tables)
+
 
 
 class Login_Window(QMainWindow, Ui_Login_MainWindow):
@@ -84,7 +110,7 @@ class Login_Window(QMainWindow, Ui_Login_MainWindow):
         self.setupUi(self)
 
     def slot1(self):
-        if self.lineEdit.text() == 'rhzz' and self.lineEdit_2.text() == '1234.com':
+        if self.lineEdit.text() == '' and self.lineEdit_2.text() == '':
             self.hide()
             self.main = Main_Window()
             self.main.show()
