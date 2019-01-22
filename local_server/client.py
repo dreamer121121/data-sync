@@ -114,7 +114,7 @@ def pull_data():
     try:
         for base_url in base_urls:
             error_db_info = base_url
-            table_name = base_url[33:36]
+            table_name = re.search(r'get/(\w+)?',base_url).group(1)
             url = _create_url(base_url,params)
             print('------119-----',url)
             logger.info("INFO begin get data from: "+table_name)
