@@ -115,13 +115,82 @@ def getDev2vul(request):
         return json_response(error_msg(E000.code,E000.msg))
 
 
-def getInstance():
-    pass
+def getInstance(request):
+    DATABASE = settings.DATABASES['ics_scan']
+    try:
+        start_date, end_date = process_request(request)
+        sql = 'select * from knowledgeBase_dev2vul where update_time >='+'\''+start_date+'\''+' and update_time <= '+'\''+end_date+'\''
+        cursor = Connect(DATABASE)
+        cursor.execute(sql)
+        rows = cursor.fetchall()
+        logger.info("count instance of this time: "+str(len(rows)))
+
+        result = []
+        for row in rows:
+            instance = {}
+            instance["name"] = row[0]
+            instance["vendor"] = row[1]
+            instance["ip"] = row[2]
+            instance['city'] = row[3]
+            instance['country'] = row[4]
+            instance['continent'] = row[5]
+            instance['asn'] = row[6]
+            instance['lat'] = row[7]
+            instance['lon'] = row[8]
+            instance['hostname'] = row[9]
+            instance['service'] = row[10]
+            instance['os'] = row[11]
+            instance['app'] = row[12]
+            instance['extrainfo'] = row[13]
+            instance['version'] = row[14]
+            instance['timestamp'] = row[15]
+            instance['type_index'] = row[16]
+            instance['update_time'] = row[17]
+            instance['from_scan'] = row[18]
+            instance['from_spider'] = row[19]
+            instance['isp'] = row[20]
+            instance['organization'] = row[21]
+            instance['from_web'] = row[22]
+            result.append(instance)
+        return json_response(success_msg(result))
+
+    except Exception as e:
+        logger.error("get instance error :%s"%e)
+        return json_response(error_msg(E000.code,E000.msg))
 
 
+def getInstanceport(request):
 
-def getInstanceport():
-    pass
+    DATABASE = settings.DATABASES['ics_scan']
+    try:
+        start_date, end_date = process_request(request)
+        sql = 'select * from knowledgeBase_dev2vul where update_time >=' + '\'' + start_date + '\'' + ' and update_time <= ' + '\'' + end_date + '\''
+        cursor = Connect(DATABASE)
+        cursor.execute(sql)
+        rows = cursor.fetchall()
+        logger.info("count instanceport of this time: " + str(len(rows)))
+
+        result = []
+        for row in rows:
+            instanceport = {}
+            instanceport["id"] = row[0]
+            instanceport["ip"] = row[1]
+            instanceport["port"] = row[2]
+            instanceport['nw_proto'] = row[3]
+            instanceport['protocol'] = row[4]
+            instanceport['banner'] = row[5]
+            instanceport['status'] = row[6]
+            instanceport['add_time'] = row[7]
+            instanceport['update_time'] = row[8]
+            instanceport['instance_id'] = row[9]
+
+            result.append(instanceport)
+        return json_response(success_msg(result))
+
+    except Exception as e:
+        logger.error("get instanceport error :%s" % e)
+        return json_response(error_msg(E000.code, E000.msg))
+
 
 def getAttack(request):
     DATABASE = settings.DATABASES['default']
