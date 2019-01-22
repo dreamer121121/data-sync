@@ -120,7 +120,7 @@ def getInstance():
 
 
 
-def getInstancport():
+def getInstanceport():
     pass
 
 def getAttack(request):
