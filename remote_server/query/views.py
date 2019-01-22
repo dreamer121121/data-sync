@@ -90,7 +90,7 @@ def getCnvd(request):
         logger.error("get cnvd error :%s"%e)
         return json_response(error_msg(E000.code,E000.msg))
 
-def getdev2vul(request):
+def getDev2vul(request):
     DATABASE = settings.DATABASES['ics_scan']
     try:
         start_date, end_date = process_request(request)
