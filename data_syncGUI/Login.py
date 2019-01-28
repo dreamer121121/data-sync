@@ -19,7 +19,11 @@ class Ui_Login_MainWindow(object):
         MainWindow.setSizePolicy(sizePolicy)
         MainWindow.setMinimumSize(QtCore.QSize(650, 366))
         MainWindow.setMaximumSize(QtCore.QSize(650, 366))
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("images/titile.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        MainWindow.setWindowIcon(icon)
         MainWindow.setStyleSheet("#MainWindow {background-color: rgb(255, 255, 255);}")
+        MainWindow.setIconSize(QtCore.QSize(16, 16))
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.frame = QtWidgets.QFrame(self.centralwidget)
@@ -111,7 +115,7 @@ class Ui_Login_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Login"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Data sync_Login"))
         self.label_3.setText(_translate("MainWindow", "数据同步系统客户端"))
         self.label.setText(_translate("MainWindow", "用户名"))
         self.label_2.setText(_translate("MainWindow", "密码"))
