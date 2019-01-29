@@ -28,20 +28,23 @@
     <height>366</height>
    </size>
   </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
   <property name="windowTitle">
    <string>Data sync_Login</string>
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>images/titile.ico</normaloff>images/titile.ico</iconset>
+    <normaloff>images/title.ico</normaloff>images/title.ico</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">#MainWindow {background-color: rgb(255, 255, 255);}</string>
   </property>
   <property name="iconSize">
    <size>
-    <width>16</width>
-    <height>16</height>
+    <width>32</width>
+    <height>32</height>
    </size>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -98,7 +101,7 @@ text-align:&quot;center&quot;;</string>
       <x>0</x>
       <y>60</y>
       <width>651</width>
-      <height>271</height>
+      <height>261</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -209,15 +212,28 @@ background-color: rgb(255, 255, 255);</string>
       <rect>
        <x>520</x>
        <y>110</y>
-       <width>81</width>
-       <height>31</height>
+       <width>80</width>
+       <height>30</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
-      <string notr="true">border-image:url(./images/login.png)</string>
+      <string notr="true">background-color: rgb(44, 171, 206);
+color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
-      <string/>
+      <string>登 陆</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>80</width>
+       <height>30</height>
+      </size>
      </property>
     </widget>
    </widget>

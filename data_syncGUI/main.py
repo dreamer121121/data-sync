@@ -1,5 +1,7 @@
 from PyQt5.QtWidgets import QMainWindow, QApplication,QMessageBox
 from PyQt5 import QtMultimedia,QtCore
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QCursor
 from Login import Ui_Login_MainWindow
 from UI_mainwindow import Ui_main_MainWindow
 from aip import AipSpeech
@@ -116,6 +118,12 @@ class Login_Window(QMainWindow, Ui_Login_MainWindow):
         self.setupUi(self)
         self.lineEdit.setToolTip("请输入用户名，默认为rhzz")
         self.lineEdit_2.setToolTip("请输入密码，默认为1234.com")
+        self.pushButton.setCursor(QCursor(Qt.PointingHandCursor))#设置鼠标图标变为手型
+        self.pushButton.pressed.connect(self.pushButton_pressed)
+        self.pushButton.released.connect(self.pushbutton_released)
+        self.status = self.statusBar()
+        self.status.showMessage('Copyright © 2018 - 现在 睿航至臻 版权所有')
+        self.status.setStyleSheet("color: gray")
 
 
         """语音提示尚未成功"""
@@ -131,11 +139,25 @@ class Login_Window(QMainWindow, Ui_Login_MainWindow):
 
     def slot1(self):
 
-        if self.lineEdit.text() == '' and self.lineEdit_2.text() == '':
+        if self.lineEdit.text() == 'rhzz' and self.lineEdit_2.text() == '1234.com':
             self.hide()
             self.main = Main_Window()
             self.main.show()
+        else:
+            QMessageBox.information(self,'Error','用户名或密码错误')
+            self.lineEdit.clear()
+            self.lineEdit_2.clear()
 
+
+    def pushButton_pressed(self):
+
+        self.pushButton.setStyleSheet("background-color: rgb(44, 171, 206);\n"
+                                      "color: rgb(221, 46, 57);")
+
+
+    def pushbutton_released(self):
+        self.pushButton.setStyleSheet("background-color: rgb(44, 171, 206);\n"
+                                      "color: rgb(255, 255, 255);")
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
