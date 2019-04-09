@@ -12,9 +12,9 @@ from django.contrib.auth.models import Permission, User
 from django.shortcuts import HttpResponse
 from django.utils import six
 
-from function.error_code import E001
-from function.common import json_response, error_msg
-from function.common import success_msg, json_response, error_msg
+from common.error_code import E001
+from common.function import json_response, error_msg
+from common.function import success_msg, json_response, error_msg
 
 logger = logging.getLogger(__name__)
 perf_logger = logging.getLogger('performance')

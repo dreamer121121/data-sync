@@ -4,8 +4,12 @@ import logging
 from common.function import success_msg,error_msg,json_response
 from common.error_code import E000
 import datetime
+from common.decorators import http_method_required
 
 logger = logging.getLogger(__name__)
+
+TABLES = {'cve':'cve','vulnerability':'knowledgeBase_vulnerability','dev2vul':'knowledgeBase_dev2vul',
+          'instance':'knowledgeBase_instance','instanceport':'knowledgeBase_instanceport','conpot_log':'conpot_log'}
 
 def Connect(DATABASE):
     conn = pymysql.connect(host = DATABASE['HOST'],user= DATABASE['USER'],password=DATABASE['PASSWORD'],db=DATABASE['NAME'])
@@ -21,11 +25,27 @@ def process_request(request):
         end_date = end_date[0:10]
     return start_date,end_date
 
+def verify(user,password):
+    DATABASE = settings.DATABASES['data_sync']
+    cursor = Connect(DATABASE)
+    sql = 'select * from verify where user = '+'\''+str(user)+'\''
+    cursor.execute(sql)
+    rows = cursor.fetchall()[0]
+
+    if rows:
+        if rows[0] == user and rows[1] == password:
+            return True
+    else:
+        return False
+
+
+
+
 def getCve(request):
     DATABASE = settings.DATABASES['default']
     try:
         start_date,end_date = process_request(request)
-        sql = 'select * from cve where update_time >='+'\''+start_date+'\''+' and update_time <= '+'\''+end_date+'\''
+        sql = 'select * from cve where rhzz_update_time >='+'\''+start_date+'\''+' and rhzz_update_time <= '+'\''+end_date+'\''
         cursor = Connect(DATABASE)
         cursor.execute(sql)
         rows = cursor.fetchall()
@@ -63,7 +83,7 @@ def getCnvd(request):
     DATABASE = settings.DATABASES['ics_scan']
     try:
         start_date, end_date = process_request(request)
-        sql = 'select * from knowledgeBase_vulnerability where update_time >='+'\''+start_date+'\''+' and update_time <= '+'\''+end_date+'\''
+        sql = 'select * from knowledgeBase_vulnerability where rhzz_update_time >='+'\''+start_date+'\''+' and rhzz_update_time <= '+'\''+end_date+'\''
         cursor = Connect(DATABASE)
         cursor.execute(sql)
         rows = cursor.fetchall()
@@ -94,7 +114,7 @@ def getDev2vul(request):
     DATABASE = settings.DATABASES['ics_scan']
     try:
         start_date, end_date = process_request(request)
-        sql = 'select * from knowledgeBase_dev2vul where update_time >='+'\''+start_date+'\''+' and update_time <= '+'\''+end_date+'\''
+        sql = 'select * from knowledgeBase_dev2vul where rhzz_update_time >='+'\''+start_date+'\''+' and rhzz_update_time <= '+'\''+end_date+'\''
         cursor = Connect(DATABASE)
         cursor.execute(sql)
         rows = cursor.fetchall()
@@ -119,7 +139,7 @@ def getInstance(request):
     DATABASE = settings.DATABASES['ics_scan']
     try:
         start_date, end_date = process_request(request)
-        sql = 'select * from knowledgeBase_instance where update_time >='+'\''+start_date+'\''+' and update_time <= '+'\''+end_date+'\''
+        sql = 'select * from knowledgeBase_instance where rhzz_update_time >='+'\''+start_date+'\''+' and rhzz_update_time <= '+'\''+end_date+'\''
         cursor = Connect(DATABASE)
         cursor.execute(sql)
         rows = cursor.fetchall()
@@ -165,7 +185,7 @@ def getInstanceport(request):
     DATABASE = settings.DATABASES['ics_scan']
     try:
         start_date, end_date = process_request(request)
-        sql = 'select * from knowledgeBase_instanceport where update_time >=' + '\'' + start_date + '\'' + ' and update_time <= ' + '\'' + end_date + '\''
+        sql = 'select * from knowledgeBase_instanceport where rhzz_update_time >=' + '\'' + start_date + '\'' + ' and rhzz_update_time <= ' + '\'' + end_date + '\''
         cursor = Connect(DATABASE)
         cursor.execute(sql)
         rows = cursor.fetchall()
@@ -228,4 +248,33 @@ def getAttack(request):
     except Exception as e:
         logger.error("get conpot_log error :%s"%e)
         return json_response(error_msg(E000.code,E000.msg))
+
+
+@http_method_required('GET')
+def getdata(request):
+
+    user = request.GET.get('user')
+    password = request.GET.get('password')
+    key = request.GET.get('key')
+
+    #验证用户名和密码
+    if verify(user,password):
+        if key in TABLES.keys():
+            if key == 'cve':
+                return getCve(request)
+            elif key == 'vulnerability':
+                return getCnvd(request)
+            elif key == 'dev2vul':
+                return getDev2vul(request)
+            elif key == 'instance':
+                return getInstance(request)
+            elif key == 'instanceport':
+                return getInstanceport(request)
+            elif key == 'conpot_log':
+                return getAttack(request)
+
+    else:
+        msg = "用户名或者密码错误"
+        return json_response(error_msg(E000.code,msg))
+
 

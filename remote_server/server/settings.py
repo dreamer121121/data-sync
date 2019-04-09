@@ -133,6 +133,14 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '3306',
     },
+    'data_sync':{
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'data_sync',
+        'USER': 'root',
+        'PASSWORD': '123456',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
 }
 
 
