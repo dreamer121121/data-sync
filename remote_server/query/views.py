@@ -45,7 +45,7 @@ def getCve(request):
     DATABASE = settings.DATABASES['default']
     try:
         start_date,end_date = process_request(request)
-        sql = 'select * from cve where rhzz_update_time >='+'\''+start_date+'\''+' and update_time <= '+'\''+end_date+'\''
+        sql = 'select * from cve where update_time >='+'\''+start_date+'\''+' and update_time <= '+'\''+end_date+'\''
         cursor = Connect(DATABASE)
         cursor.execute(sql)
         rows = cursor.fetchall()
