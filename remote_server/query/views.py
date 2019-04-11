@@ -45,7 +45,7 @@ def getCve(request):
     DATABASE = settings.DATABASES['default']
     try:
         start_date,end_date = process_request(request)
-        sql = 'select * from cve where rhzz_update_time >='+'\''+start_date+'\''+' and rhzz_update_time <= '+'\''+end_date+'\''
+        sql = 'select * from cve where rhzz_update_time >='+'\''+start_date+'\''+' and update_time <= '+'\''+end_date+'\''
         cursor = Connect(DATABASE)
         cursor.execute(sql)
         rows = cursor.fetchall()
@@ -83,7 +83,7 @@ def getCnvd(request):
     DATABASE = settings.DATABASES['ics_scan']
     try:
         start_date, end_date = process_request(request)
-        sql = 'select * from knowledgeBase_vulnerability where rhzz_update_time >='+'\''+start_date+'\''+' and rhzz_update_time <= '+'\''+end_date+'\''
+        sql = 'select * from knowledgeBase_vulnerability where update_time >='+'\''+start_date+'\''+' and update_time <= '+'\''+end_date+'\''
         cursor = Connect(DATABASE)
         cursor.execute(sql)
         rows = cursor.fetchall()
@@ -114,7 +114,7 @@ def getDev2vul(request):
     DATABASE = settings.DATABASES['ics_scan']
     try:
         start_date, end_date = process_request(request)
-        sql = 'select * from knowledgeBase_dev2vul where rhzz_update_time >='+'\''+start_date+'\''+' and rhzz_update_time <= '+'\''+end_date+'\''
+        sql = 'select * from knowledgeBase_dev2vul where update_time >='+'\''+start_date+'\''+' and update_time <= '+'\''+end_date+'\''
         cursor = Connect(DATABASE)
         cursor.execute(sql)
         rows = cursor.fetchall()
@@ -139,7 +139,7 @@ def getInstance(request):
     DATABASE = settings.DATABASES['ics_scan']
     try:
         start_date, end_date = process_request(request)
-        sql = 'select * from knowledgeBase_instance where rhzz_update_time >='+'\''+start_date+'\''+' and rhzz_update_time <= '+'\''+end_date+'\''
+        sql = 'select * from knowledgeBase_instance where update_time >='+'\''+start_date+'\''+' and update_time <= '+'\''+end_date+'\''
         cursor = Connect(DATABASE)
         cursor.execute(sql)
         rows = cursor.fetchall()
@@ -185,7 +185,7 @@ def getInstanceport(request):
     DATABASE = settings.DATABASES['ics_scan']
     try:
         start_date, end_date = process_request(request)
-        sql = 'select * from knowledgeBase_instanceport where rhzz_update_time >=' + '\'' + start_date + '\'' + ' and rhzz_update_time <= ' + '\'' + end_date + '\''
+        sql = 'select * from knowledgeBase_instanceport where update_time >=' + '\'' + start_date + '\'' + ' and update_time <= ' + '\'' + end_date + '\''
         cursor = Connect(DATABASE)
         cursor.execute(sql)
         rows = cursor.fetchall()
