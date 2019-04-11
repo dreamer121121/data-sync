@@ -274,6 +274,7 @@ def getdata(request):
                 return getAttack(request)
     else:
         msg = "用户名或者密码错误"
+        return json_response(error_msg(E000.code,msg))
 
 
 
