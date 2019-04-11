@@ -257,24 +257,28 @@ def getdata(request):
     password = request.GET.get('password')
     key = request.GET.get('key')
 
-    #验证用户名和密码
-    if verify(user,password):
-        if key in TABLES.keys():
-            if key == 'cve':
-                return getCve(request)
-            elif key == 'vulnerability':
-                return getCnvd(request)
-            elif key == 'dev2vul':
-                return getDev2vul(request)
-            elif key == 'instance':
-                return getInstance(request)
-            elif key == 'instanceport':
-                return getInstanceport(request)
-            elif key == 'conpot_log':
-                return getAttack(request)
+    try:
+        #验证用户名和密码
+        if verify(user,password):
+            if key in TABLES.keys():
+                if key == 'cve':
+                    return getCve(request)
+                elif key == 'vulnerability':
+                    return getCnvd(request)
+                elif key == 'dev2vul':
+                    return getDev2vul(request)
+                elif key == 'instance':
+                    return getInstance(request)
+                elif key == 'instanceport':
+                    return getInstanceport(request)
+                elif key == 'conpot_log':
+                    return getAttack(request)
+        else:
+            msg = "用户名或者密码错误"
+            return json_response(error_msg(E000.code,msg))
 
-    else:
-        msg = "用户名或者密码错误"
-        return json_response(error_msg(E000.code,msg))
+    except Exception as e:
+        return json_response(error_msg(E000.code,E000.msg))
+
 
 
