@@ -127,6 +127,7 @@ def getDev2vul(request):
             dev2vul["name"] = row[0]
             dev2vul["device"] = row[1]
             dev2vul["vulnerability"] = row[2]
+            dev2vul["update_time"] = row[3]
             result.append(dev2vul)
         return json_response(success_msg(result))
 
