@@ -227,6 +227,10 @@ def getAttack(request):
 
         result = []
         for row in rows:
+            row = list(row)
+            for j in range(len(row)):
+                if row[j] == None:
+                    row[j] = "Null"
             conpot_log = {}
             conpot_log["date"] = str(row[0])
             conpot_log["time"] = str(row[1])
