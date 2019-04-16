@@ -284,7 +284,6 @@ def getdata(request):
             return json_response(error_msg(E000.code,msg))
 
     except Exception as e:
-        msg = "用户名或者密码错误"
-        return json_response(error_msg(E000.code, msg))
+        return json_response(error_msg(E000.code, E000.msg))
 
 
