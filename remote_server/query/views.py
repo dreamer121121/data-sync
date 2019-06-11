@@ -26,12 +26,13 @@ def process_request(request):
     return start_date,end_date
 
 def verify(user,password):
+    print("---verify--")
     DATABASE = settings.DATABASES['data_sync']
     cursor = Connect(DATABASE)
     sql = 'select * from verify where user = '+'\''+str(user)+'\''
     cursor.execute(sql)
     rows = cursor.fetchall()[0]
-
+    print("--rows---",rows)
     if rows:
         if rows[0] == user and rows[1] == password:
             return True
@@ -150,29 +151,29 @@ def getInstance(request):
         for row in rows:
             print(len(row))
             instance = {}
-            instance["name"] = row[0]
-            instance["vendor"] = row[1]
-            instance["ip"] = row[2]
-            instance['city'] = row[3]
-            instance['country'] = row[4]
-            instance['continent'] = row[5]
-            instance['asn'] = row[6]
-            instance['lat'] = row[7]
-            instance['lon'] = row[8]
-            instance['hostname'] = row[9]
-            instance['service'] = row[10]
-            instance['os'] = row[11]
-            instance['app'] = row[12]
-            instance['extrainfo'] = row[13]
-            instance['version'] = row[14]
-            instance['timestamp'] = row[15]
-            instance['type_index'] = row[16]
-            instance['update_time'] = row[17]
-            instance['from_scan'] = row[18]
-            instance['from_spider'] = row[19]
-            instance['isp'] = row[20]
-            instance['organization'] = row[21]
-            instance['from_web'] = row[22]
+           # instance["name"] = row[0]
+            instance["vendor"] = row[0]
+            instance["ip"] = row[1]
+            instance['city'] = row[2]
+            instance['country'] = row[3]
+            instance['continent'] = row[4]
+            instance['asn'] = row[5]
+            instance['lat'] = row[6]
+            instance['lon'] = row[7]
+            instance['hostname'] = row[8]
+            instance['service'] = row[9]
+            instance['os'] = row[10]
+            instance['app'] = row[11]
+            instance['extrainfo'] = row[12]
+            instance['version'] = row[13]
+            instance['timestamp'] = row[14]
+            instance['type_index'] = row[15]
+            instance['update_time'] = row[16]
+            instance['from_scan'] = row[17]
+            instance['from_spider'] = row[18]
+            instance['isp'] = row[19]
+            instance['organization'] = row[20]
+            instance['from_web'] = row[21]
             result.append(instance)
         return json_response(success_msg(result))
 
@@ -204,7 +205,7 @@ def getInstanceport(request):
             instanceport['status'] = row[6]
             instanceport['add_time'] = row[7]
             instanceport['update_time'] = row[8]
-            instanceport['instance_id'] = row[9]
+           # instanceport['instance_id'] = row[9]
 
             result.append(instanceport)
         return json_response(success_msg(result))
@@ -263,11 +264,12 @@ def getdata(request):
         user = request.GET.get('user')
         password = request.GET.get('password')
         key = request.GET.get('key')
-
+        print("---key---",key)
         #验证用户名和密码
         if verify(user,password):
             if key in TABLES.keys():
                 if key == 'cve':
+                    print("---cve----")
                     return getCve(request)
                 elif key == 'vulnerability':
                     return getCnvd(request)
